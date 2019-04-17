@@ -1,0 +1,1722 @@
+<html lang="es" style=""><head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Aprende aquí la tabla del 1 
+</title>
+	<meta name="description" content="Aprender todas la tabla de multiplicar del 1. Con el plan en 5 pasos, la prueba contrarreloj, juegos de la tabla del 1, fichas y obtén el diploma.">
+	<link rel="stylesheet" href="/plataforma/css/juegoseleccionar.css" >
+	<link rel="stylesheet" href="/plataforma/css/juegoseleccionar1.css" >
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+  <script>
+	
+function shuffle(o){
+    for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
+}
+
+      function nakijken () 
+      {
+			
+
+showBoven = false;
+	
+		
+		if (document.forms["tafelvan1"]["som1"].value.length != 0 && document.forms["tafelvan1"]["som2"].value.length != 0 && document.forms["tafelvan1"]["som3"].value.length != 0 && document.forms["tafelvan1"]["som4"].value.length != 0 && document.forms["tafelvan1"]["som5"].value.length != 0 && document.forms["tafelvan1"]["som6"].value.length != 0 && document.forms["tafelvan1"]["som7"].value.length != 0 && document.forms["tafelvan1"]["som8"].value.length != 0 && document.forms["tafelvan1"]["som9"].value.length != 0 && document.forms["tafelvan1"]["som10"].value.length != 0 ) 
+		{
+			var goed = 0;
+			document.getElementById('error').innerText = "";
+			document.getElementById('errorO').innerText = "";
+							document.forms["tafelvan1"]["som1"].disabled = true;
+								document.forms["tafelvan1"]["som2"].disabled = true;
+								document.forms["tafelvan1"]["som3"].disabled = true;
+								document.forms["tafelvan1"]["som4"].disabled = true;
+								document.forms["tafelvan1"]["som5"].disabled = true;
+								document.forms["tafelvan1"]["som6"].disabled = true;
+								document.forms["tafelvan1"]["som7"].disabled = true;
+								document.forms["tafelvan1"]["som8"].disabled = true;
+								document.forms["tafelvan1"]["som9"].disabled = true;
+								document.forms["tafelvan1"]["som10"].disabled = true;
+							
+			if(document.forms["tafelvan1"]["som1"].value == 1)
+			{
+				document.forms["tafelvan1"]["som1"].setAttribute("class", "antwoordGoed");	
+				goed++;
+			}
+			else
+			{ 
+				document.forms["tafelvan1"]["som1"].setAttribute("class", "antwoordFout");	
+				document.forms["tafelvan1"]["som1"].title = "1"	
+			}
+			if(document.forms["tafelvan1"]["som2"].value == 2)
+			{
+				document.forms["tafelvan1"]["som2"].setAttribute("class", "antwoordGoed");	
+				goed++;
+			}
+			else
+			{ 
+				document.forms["tafelvan1"]["som2"].setAttribute("class", "antwoordFout");	
+			}
+			if(document.forms["tafelvan1"]["som3"].value == 3)
+			{
+				document.forms["tafelvan1"]["som3"].setAttribute("class", "antwoordGoed");	
+				goed++;
+			}
+			else
+			{ 
+				document.forms["tafelvan1"]["som3"].setAttribute("class", "antwoordFout");	
+			}
+			if(document.forms["tafelvan1"]["som4"].value == 4)
+			{
+				document.forms["tafelvan1"]["som4"].setAttribute("class", "antwoordGoed");	
+				goed++;
+			}
+			else
+			{ 
+				document.forms["tafelvan1"]["som4"].setAttribute("class", "antwoordFout");	
+			}
+			if(document.forms["tafelvan1"]["som5"].value == 5)
+			{
+				document.forms["tafelvan1"]["som5"].setAttribute("class", "antwoordGoed");	
+				goed++;
+			}
+			else
+			{ 
+				document.forms["tafelvan1"]["som5"].setAttribute("class", "antwoordFout");	
+			}
+			if(document.forms["tafelvan1"]["som6"].value == 6)
+			{
+				document.forms["tafelvan1"]["som6"].setAttribute("class", "antwoordGoed");	
+				goed++;
+			}
+			else
+			{ 
+				document.forms["tafelvan1"]["som6"].setAttribute("class", "antwoordFout");	
+			}
+			if(document.forms["tafelvan1"]["som7"].value == 7)
+			{
+				document.forms["tafelvan1"]["som7"].setAttribute("class", "antwoordGoed");
+				goed++;				
+			}
+			else
+			{ 
+				document.forms["tafelvan1"]["som7"].setAttribute("class", "antwoordFout");	
+			}
+			if(document.forms["tafelvan1"]["som8"].value == 8)
+			{
+				document.forms["tafelvan1"]["som8"].setAttribute("class", "antwoordGoed");	
+				goed++;
+			}
+			else
+			{ 
+				document.forms["tafelvan1"]["som8"].setAttribute("class", "antwoordFout");	
+			}
+			if(document.forms["tafelvan1"]["som9"].value == 9)
+			{
+				document.forms["tafelvan1"]["som9"].setAttribute("class", "antwoordGoed");	
+				goed++;
+			}
+			else
+			{ 
+				document.forms["tafelvan1"]["som9"].setAttribute("class", "antwoordFout");	
+			}
+			if(document.forms["tafelvan1"]["som10"].value == 10)
+			{
+				document.forms["tafelvan1"]["som10"].setAttribute("class", "antwoordGoed");	
+				goed++;
+			}
+			else
+			{ 
+				document.forms["tafelvan1"]["som10"].setAttribute("class", "antwoordFout");	
+			}
+			
+						if(goed<10){
+				if(showBoven){
+				document.getElementById('uitslag').innerHTML = "Tienes <span>"+goed+"</span> respuestas bien de <span>10</span>.<br />";
+				}
+				else
+				{
+				document.getElementById('uitslagO').innerHTML = "Tienes <span>"+goed+"</span> respuestas bien de <span>10</span>.<br />";
+				}
+				
+			}
+			
+			else if(goed == 10){
+				if(showBoven){
+					document.getElementById('uitslag').innerHTML = "Tienes <span>"+goed+"</span> respuestas bien de <span>10</span>.<br />Enhorabuena, ¡lo tienes todo bien!";
+				}
+				else
+				{
+					addPrize(1,1,0,0);
+					$('#medal1').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud.png" style="height:40px;" />');
+					$('#medal1top').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud.png" style="height:50px;" />');
+		
+					
+					if(loggedIn)
+					{
+						document.getElementById('uitslagO').innerHTML = "Tienes <span>"+goed+"</span> respuestas bien de <span>10</span>.<br />Enhorabuena, ¡lo tienes todo bien!<br /><img src=\"https://cdn-t-2.bvkstatic.com/medalgoud.png\" class=\"swing\" style=\"width:80px;\" /><br /> <a style=\"font-size:25px;\" href=\"https://www.tablasdemultiplicar.com/vitrina-de-premios/\">Contempla la medalla en la vitrina de premios</a>";
+			
+					}
+					else
+					{
+						document.getElementById('uitslagO').innerHTML = "Tienes <span>"+goed+"</span> respuestas bien de <span>10</span>.<br />Enhorabuena, ¡lo tienes todo bien!<br /><img src=\"https://cdn-t-2.bvkstatic.com/medalgoud.png\" class=\"swing\" style=\"width:80px;\" /><br /> <span style=\"font-size:20px;\">¡Regístrate gratis para poder guardar tu medalla en la <a href=\"https://www.tablasdemultiplicar.com/vitrina-de-premios/\">&#65279;Vitrina de premios</a>!</span>";
+					}
+					
+					
+				}
+			}
+		
+			document.getElementById('nakijkBtn').innerHTML = "Volver a practicar";
+			document.getElementById('nakijkBtn').onclick =  function() {
+			rijOpnieuw();
+			return false;
+			};
+
+		}
+		else
+		{	
+			if(showBoven){
+				document.getElementById('error').innerText = "No has completado todo.";
+			}
+			else
+			{
+				document.getElementById('errorO').innerText = "No has completado todo.";
+			}
+		}
+      }
+	
+	 function rijOpnieuw()
+	  {
+		
+		document.forms["tafelvan1"]["som1"].setAttribute("class", "");	
+		document.forms["tafelvan1"]["som2"].setAttribute("class", "");	
+		document.forms["tafelvan1"]["som3"].setAttribute("class", "");	
+		document.forms["tafelvan1"]["som4"].setAttribute("class", "");	
+		document.forms["tafelvan1"]["som5"].setAttribute("class", "");	
+		document.forms["tafelvan1"]["som6"].setAttribute("class", "");	
+		document.forms["tafelvan1"]["som7"].setAttribute("class", "");	
+		document.forms["tafelvan1"]["som8"].setAttribute("class", "");	
+		document.forms["tafelvan1"]["som9"].setAttribute("class", "");	
+		document.forms["tafelvan1"]["som10"].setAttribute("class", "");	
+				 
+		document.forms["tafelvan1"]["som1"].value = "";
+		document.forms["tafelvan1"]["som2"].value = "";
+		document.forms["tafelvan1"]["som3"].value = "";
+		document.forms["tafelvan1"]["som4"].value = "";
+		document.forms["tafelvan1"]["som5"].value = "";
+		document.forms["tafelvan1"]["som6"].value = "";
+		document.forms["tafelvan1"]["som7"].value = "";
+		document.forms["tafelvan1"]["som8"].value = "";
+		document.forms["tafelvan1"]["som9"].value = "";
+		document.forms["tafelvan1"]["som10"].value = "";
+				goed = 0;
+		document.getElementById('uitslag').innerHTML = "";
+		document.getElementById('uitslagO').innerHTML = "";
+		document.getElementById('error').innerText = "";
+		document.getElementById('errorO').innerText = "";
+		document.forms["tafelvan1"]["som1"].disabled = false;
+		document.forms["tafelvan1"]["som2"].disabled = false;
+		document.forms["tafelvan1"]["som3"].disabled = false;
+		document.forms["tafelvan1"]["som4"].disabled = false;
+		document.forms["tafelvan1"]["som5"].disabled = false;
+		document.forms["tafelvan1"]["som6"].disabled = false;
+		document.forms["tafelvan1"]["som7"].disabled = false;
+		document.forms["tafelvan1"]["som8"].disabled = false;
+		document.forms["tafelvan1"]["som9"].disabled = false;
+		document.forms["tafelvan1"]["som10"].disabled = false;
+				document.getElementById('nakijkBtn').innerHTML = "Comprobar";
+			document.getElementById('nakijkBtn').onclick =  function() {
+			nakijken();
+			return false;
+			};
+			//document.getElementById('nakijkBtn').href = "";
+	  }
+	
+	
+	
+		  function rijOpnieuw2()
+	  {
+	  	
+		shuffle(doorElkaarVragen);
+				for(j = 1;j<=10;j++)
+		{
+			var dEID = "dESom"+j;
+			console.log(dEID);
+			document.getElementById(dEID).innerHTML= doorElkaarVragen[j-1].dESom;
+			//console.log(doorElkaarVragen[j].dESom);
+		}
+		document.forms["tafelvan2"]["som1"].setAttribute("class", "");	
+		document.forms["tafelvan2"]["som2"].setAttribute("class", "");	
+		document.forms["tafelvan2"]["som3"].setAttribute("class", "");	
+		document.forms["tafelvan2"]["som4"].setAttribute("class", "");	
+		document.forms["tafelvan2"]["som5"].setAttribute("class", "");	
+		document.forms["tafelvan2"]["som6"].setAttribute("class", "");	
+		document.forms["tafelvan2"]["som7"].setAttribute("class", "");	
+		document.forms["tafelvan2"]["som8"].setAttribute("class", "");	
+		document.forms["tafelvan2"]["som9"].setAttribute("class", "");	
+		document.forms["tafelvan2"]["som10"].setAttribute("class", "");	
+				 
+		document.forms["tafelvan2"]["som1"].value = "";
+		document.forms["tafelvan2"]["som2"].value = "";
+		document.forms["tafelvan2"]["som3"].value = "";
+		document.forms["tafelvan2"]["som4"].value = "";
+		document.forms["tafelvan2"]["som5"].value = "";
+		document.forms["tafelvan2"]["som6"].value = "";
+		document.forms["tafelvan2"]["som7"].value = "";
+		document.forms["tafelvan2"]["som8"].value = "";
+		document.forms["tafelvan2"]["som9"].value = "";
+		document.forms["tafelvan2"]["som10"].value = "";
+				goed = 0;
+		document.getElementById('uitslag2').innerHTML = "";
+		document.getElementById('uitslagO2').innerHTML = "";
+		document.getElementById('error2').innerText = "";
+		document.getElementById('errorO2').innerText = "";
+		document.forms["tafelvan2"]["som1"].disabled = false;
+		document.forms["tafelvan2"]["som2"].disabled = false;
+		document.forms["tafelvan2"]["som3"].disabled = false;
+		document.forms["tafelvan2"]["som4"].disabled = false;
+		document.forms["tafelvan2"]["som5"].disabled = false;
+		document.forms["tafelvan2"]["som6"].disabled = false;
+		document.forms["tafelvan2"]["som7"].disabled = false;
+		document.forms["tafelvan2"]["som8"].disabled = false;
+		document.forms["tafelvan2"]["som9"].disabled = false;
+		document.forms["tafelvan2"]["som10"].disabled = false;
+				document.getElementById('nakijkBtn2').innerHTML = "Comprobar";
+			document.getElementById('nakijkBtn2').onclick =  function() {
+			nakijken2();
+			return false;
+			};
+			//document.getElementById('nakijkBtn').href = "";
+	  }
+	
+	
+	var doorElkaarTafel = 1;
+	var doorElkaarVragen = [];
+		for(i = 0; i<=9;i++)
+	{
+		var dEV = i + 1;
+		var doorElkaarAntwoord = doorElkaarTafel * dEV;
+		doorElkaarVragen[i] = [];
+				doorElkaarVragen[i] = {dESom: +doorElkaarTafel+" x "+dEV+" = ",dEAntw: doorElkaarAntwoord};
+		
+			}
+	shuffle(doorElkaarVragen);
+	console.log(doorElkaarVragen);
+	//console.log(sleepAntwoorden);
+
+	
+	 function nakijken2() 
+      {
+	showBoven = false;
+				if (document.forms["tafelvan2"]["som1"].value.length != 0 && document.forms["tafelvan2"]["som2"].value.length != 0 && document.forms["tafelvan2"]["som3"].value.length != 0 && document.forms["tafelvan2"]["som4"].value.length != 0 && document.forms["tafelvan2"]["som5"].value.length != 0 && document.forms["tafelvan2"]["som6"].value.length != 0 && document.forms["tafelvan2"]["som7"].value.length != 0 && document.forms["tafelvan2"]["som8"].value.length != 0 && document.forms["tafelvan2"]["som9"].value.length != 0 && document.forms["tafelvan2"]["som10"].value.length != 0) 
+		{
+			var goed = 0;
+			document.getElementById('error2').innerText = "";
+			document.getElementById('errorO2').innerText = "";
+							document.forms["tafelvan2"]["som1"].disabled = true;
+								document.forms["tafelvan2"]["som2"].disabled = true;
+								document.forms["tafelvan2"]["som3"].disabled = true;
+								document.forms["tafelvan2"]["som4"].disabled = true;
+								document.forms["tafelvan2"]["som5"].disabled = true;
+								document.forms["tafelvan2"]["som6"].disabled = true;
+								document.forms["tafelvan2"]["som7"].disabled = true;
+								document.forms["tafelvan2"]["som8"].disabled = true;
+								document.forms["tafelvan2"]["som9"].disabled = true;
+								document.forms["tafelvan2"]["som10"].disabled = true;
+							
+			if(document.forms["tafelvan2"]["som1"].value == doorElkaarVragen[0].dEAntw)
+			{
+				document.forms["tafelvan2"]["som1"].setAttribute("class", "antwoordGoed");	
+				goed++;
+			}
+			else
+			{ 
+				document.forms["tafelvan2"]["som1"].setAttribute("class", "antwoordFout");	
+				document.forms["tafelvan2"]["som1"].title = "1"	
+			}
+			if(document.forms["tafelvan2"]["som2"].value ==  doorElkaarVragen[1].dEAntw)
+			{
+				document.forms["tafelvan2"]["som2"].setAttribute("class", "antwoordGoed");	
+				goed++;
+			}
+			else
+			{ 
+				document.forms["tafelvan2"]["som2"].setAttribute("class", "antwoordFout");	
+			}
+			if(document.forms["tafelvan2"]["som3"].value ==  doorElkaarVragen[2].dEAntw)
+			{
+				document.forms["tafelvan2"]["som3"].setAttribute("class", "antwoordGoed");	
+				goed++;
+			}
+			else
+			{ 
+				document.forms["tafelvan2"]["som3"].setAttribute("class", "antwoordFout");	
+			}
+			if(document.forms["tafelvan2"]["som4"].value ==  doorElkaarVragen[3].dEAntw)
+			{
+				document.forms["tafelvan2"]["som4"].setAttribute("class", "antwoordGoed");	
+				goed++;
+			}
+			else
+			{ 
+				document.forms["tafelvan2"]["som4"].setAttribute("class", "antwoordFout");	
+			}
+			if(document.forms["tafelvan2"]["som5"].value ==  doorElkaarVragen[4].dEAntw)
+			{
+				document.forms["tafelvan2"]["som5"].setAttribute("class", "antwoordGoed");	
+				goed++;
+			}
+			else
+			{ 
+				document.forms["tafelvan2"]["som5"].setAttribute("class", "antwoordFout");	
+			}
+			if(document.forms["tafelvan2"]["som6"].value ==  doorElkaarVragen[5].dEAntw)
+			{
+				document.forms["tafelvan2"]["som6"].setAttribute("class", "antwoordGoed");	
+				goed++;
+			}
+			else
+			{ 
+				document.forms["tafelvan2"]["som6"].setAttribute("class", "antwoordFout");	
+			}
+			if(document.forms["tafelvan2"]["som7"].value ==  doorElkaarVragen[6].dEAntw)
+			{
+				document.forms["tafelvan2"]["som7"].setAttribute("class", "antwoordGoed");
+				goed++;				
+			}
+			else
+			{ 
+				document.forms["tafelvan2"]["som7"].setAttribute("class", "antwoordFout");	
+			}
+			if(document.forms["tafelvan2"]["som8"].value ==  doorElkaarVragen[7].dEAntw)
+			{
+				document.forms["tafelvan2"]["som8"].setAttribute("class", "antwoordGoed");	
+				goed++;
+			}
+			else
+			{ 
+				document.forms["tafelvan2"]["som8"].setAttribute("class", "antwoordFout");	
+			}
+			if(document.forms["tafelvan2"]["som9"].value ==  doorElkaarVragen[8].dEAntw)
+			{
+				document.forms["tafelvan2"]["som9"].setAttribute("class", "antwoordGoed");	
+				goed++;
+			}
+			else
+			{ 
+				document.forms["tafelvan2"]["som9"].setAttribute("class", "antwoordFout");	
+			}
+			
+			if(document.forms["tafelvan2"]["som10"].value ==  doorElkaarVragen[9].dEAntw)
+			{
+				document.forms["tafelvan2"]["som10"].setAttribute("class", "antwoordGoed");	
+				goed++;
+			}
+			else
+			{ 
+				document.forms["tafelvan2"]["som10"].setAttribute("class", "antwoordFout");	
+			}
+						if(goed<10)
+						{
+				
+				if(showBoven){
+					document.getElementById('uitslag2').innerHTML = "Tienes <span>"+goed+"</span> respuestas bien de <span>10</span>.<br />";
+				}
+				else
+				{
+					document.getElementById('uitslagO2').innerHTML = "Tienes <span>"+goed+"</span> respuestas bien de <span>10</span>.<br />";
+				}
+			}
+						else if(goed==10)
+			{
+				if(showBoven){
+					document.getElementById('uitslag2').innerHTML = "Tienes <span>"+goed+"</span> respuestas bien de <span>10</span>.<br />Enhorabuena, ¡lo tienes todo bien!";
+				}
+				else
+				{
+
+					addPrize(1,3,0,0);
+					$('#medal3').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud.png" style="height:40px;" />');
+					$('#medal3top').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud.png" style="height:50px;" />');
+					if(loggedIn)
+					{
+						document.getElementById('uitslagO2').innerHTML = "Tienes <span>"+goed+"</span> respuestas bien de <span>10</span>.<br />Enhorabuena, ¡lo tienes todo bien!<br /><img src=\"https://cdn-t-2.bvkstatic.com/medalgoud.png\" class=\"swing\" style=\"width:80px;\" /><br /> <a style=\"font-size:25px;\" href=\"https://www.tablasdemultiplicar.com/vitrina-de-premios/\">Contempla la medalla en la vitrina de premios</a>";
+			
+					}
+					else
+					{
+						document.getElementById('uitslagO2').innerHTML = "Tienes <span>"+goed+"</span> respuestas bien de <span>10</span>.<br />Enhorabuena, ¡lo tienes todo bien!<br /><img src=\"https://cdn-t-2.bvkstatic.com/medalgoud.png\" class=\"swing\" style=\"width:80px;\" /><br /> <span style=\"font-size:20px;\">¡Regístrate gratis para poder guardar tu medalla en la <a href=\"https://www.tablasdemultiplicar.com/vitrina-de-premios/\">&#65279;Vitrina de premios</a>!</span>";
+					}
+					
+				}
+			}
+			document.getElementById('nakijkBtn2').innerHTML = "Volver a practicar";
+			document.getElementById('nakijkBtn2').onclick =  function() {
+			rijOpnieuw2();
+			return false;
+			};
+		}
+		else
+		{	
+			if(showBoven){
+				document.getElementById('error2').innerText = "No has completado todo.";
+			}
+			else
+			{
+				document.getElementById('errorO2').innerText = "No has completado todo.";
+			}
+		}
+      }
+	
+      </script>
+
+<body class="grid">
+	<div class="page-content clear">
+
+		<div class="col-4-5">
+			<div class="main-content module" style="padding-top:6px;">
+ 				<div class="game-board clear">	
+					<div class="board-container col-2-3 clear" style="margin: 1px auto;float:none; width:100%;">
+					 <p id="error"></p>
+					 		
+<div style="margin-top:15px;padding-top:15px;">
+<h3 style="margin-bottom:60px;" id="stp4">Paso 4: Respuesta múltiple:<span id="medal4" style="float: left;"><img src="https://cdn-t-2.bvkstatic.com/medalgoud-holder.png" style="height:40px;"></span></h3>
+
+<p>¡Intenta responder correctamente las 15 preguntas!</p>
+
+	<div class="content sommen" id="scroll">
+		
+		<div class="cntr">
+			
+			<div class="wysiwygMC">
+					
+				<div class="blok full" id="startBlok" style="padding: 2%; display: none;">
+				<div class="main" id="mainM" style="padding-left:30px;">
+			
+				<p class="info" style="border:0; padding:0; margin-left:10px;">			
+					</p><form class="som" style="padding:0;">			
+							<button id="startBtn" onclick="return false;" style="float:left;margin-top:15px;" class="submit">Start</button>
+					</form>				
+					<br><br>
+								<p></p>
+						
+				</div>
+				</div>
+				<div class="blok full" id="eindeBlok" style="display:none;">
+				<div class="main">
+					<form class="som">
+					
+						<div class="inner">
+						
+							El resultado:							</div> 
+							<div class="answers-wrapper-uitslag">
+							<div id="mkAllesgoed"></div>
+							<div class="row">
+								
+								<div class="blok green icon-check"><p id="aGoedEind">0</p></div>
+								<span class="green" id="agoEind">0 / 20</span>
+								
+							</div>
+							
+							<div class="row second" style="clear:both;">
+								
+								<div class="blok red icon-x"><p id="aFoutEind">0</p></div>
+								<span class="red" id="afoEind">0 / 20</span>
+								
+							</div>
+							
+						</div>
+						<button onclick="mkAgain();return false;" class="submit">Volver a practicar</button>
+						</form>
+				</div>
+				</div>
+				<div class="blok full" id="somBlok" style="display: block;">
+					
+						<div class="side"> 
+						
+						<div class="clock-wrapper">
+							
+							<div class="clock" id="timer" style="display: none; background: rgb(255, 255, 255);"><p><span>00</span>:<span>00</span></p></div>
+							
+						</div>
+						
+						<div class="answers-wrapper">
+							
+							<div id="goedBlok" class="row">
+								
+								<div class="blok green icon-check"><p id="aGoed">0</p></div>
+								<span class="green" id="ago">0 / 15</span>
+								
+							</div>
+							
+							<div id="foutBlok" class="row second">
+								
+								<div class="blok red icon-x"><p id="aFout">0</p></div>
+								<span class="red" id="afo">0 / 15</span>
+								
+							</div>
+							
+						</div>
+						
+						<div class="progress-wrapper">
+							
+							<div class="row">
+								
+								<div class="blok icon-clock"><p id="perc">0%</p><div id="progr" style="width: 0%;"></div></div>
+								<span class="red" id="ag">0 / 15</span>
+								
+							</div>
+							
+						</div>
+						
+					</div>
+					
+					<div class="main">
+						 
+						<form name="somForm" class="som" onsubmit="return false;" autocomplete="off">
+						<div id="goedeAntwoord" style="display:none; font-size:30px;margin-bottom:5px;color:#000"></div>
+						<div class="inner" id="vraagVak"><span id="som">1 x 10 </span> <span id="antw"></span>
+							</div> 
+							<input id="antw2" type="text" style="display: none; background: rgb(255, 255, 255); color: rgb(0, 0, 0);" inputmode="numeric" name="antw" required="" class="field" placeholder="">
+							<div id="meerkeuzeVak">
+							<span id="mka1" class="submit" style="float:left; width:40%;padding:3% 3% 3% 3%;margin-left: 3%;">10</span>
+							<span id="mka2" class="submit" style="float: left; width: 40%; padding: 3%; margin-left: 3%;">11</span>
+							<span id="mka3" class="submit" style="float: left; width: 40%; padding: 3%; margin-left: 3%;">13</span>
+							<span id="mka4" class="submit" style="float: left; width: 40%; padding: 3%; margin-left: 3%;">12</span>
+							</div>
+							<div class="toetsenbord" id="toetsVak" style="display: none;">
+							<span id="typ1" class="submit" style="clear: both; float:left; width:31%;padding:3% 3% 3%;">1</span><span id="typ2" class="submit" style="float:left; width:31%;margin-left:3%;padding:3% 3% 3%;">2</span><span id="typ3" class="submit" style="float:left; margin-left:3%;width:31%;padding:3% 3% 3%;">3</span>
+						<span id="typ4" class="submit" style="float:left; clear: both;width:31%;padding:3% 3% 3%;">4</span><span id="typ5" class="submit" style="float:left; width:31%;margin-left:3%;padding:3% 3% 3%;">5</span><span id="typ6" class="submit" style="float:left; margin-left:3%;width:31%;padding:3% 3% 3%;">6</span>
+						<span id="typ7" class="submit" style="float:left; clear: both;width:31%;padding:3% 3% 3%;">7</span><span id="typ8" class="submit" style="float:left; width:31%;margin-left:3%;padding:3% 3% 3%;">8</span><span id="typ9" class="submit" style="float:left; margin-left:3%;width:31%;padding:3% 3% 3%;">9</span>
+						<span class="submit" style="float:left; clear: both; width:31%; padding:3% 3% 3%; visibility:hidden;"></span>	
+							
+							<span id="typ0" class="submit" style="float:left; width:31%;margin-left:3%;padding:3% 3% 3%;">0</span><span class="submit" id="erase" onclick="erase(1); return false;" style="background:#FF6961;float:left; width:31%;margin-left:3%;padding:3% 3% 3%;">&lt;-</span>
+						</div>
+						<div style="min-height:180px;clear:both;">
+						<button onclick="return false;" id="sbmtButton" style="background-color: rgb(66, 130, 194); float: right; clear: both; margin-bottom: 80px; visibility: visible; display: block;" class="submit"><i class="fa fa-arrow-right" style="font-size:34px"></i></button>
+						</div>
+						
+						</form>
+						<div id="ruimteVak" style="height:360px; width:100%;"></div>
+					</div>	
+				</div>		
+				<div>
+			</div>	
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</div>
+
+<br style="clear:both;">
+				
+				</div>	
+		</div>
+		<aside class="col-1-5 sidebar">
+		</aside>
+	</div>
+		
+<script src="/plataforma/js/juegoseleccionar.js"></script>
+<script>
+
+$(document).ready(function($){
+
+setTimeout(function(){
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+console.log("Analytics:"+loggedIn);
+var gaLog;
+if(loggedIn)
+{
+	gaLog = '1';
+}
+else
+{
+	gaLog = '0';
+}
+ga('create', 'UA-57797082-4', 'auto');
+ga('create', 'UA-57797082-21', 'auto', {'name': 'bvk'});
+ga('set', 'dimension1', gaLog);
+ga('bvk.set', 'dimension1', gaLog);
+ga('set', 'anonymizeIp', true);
+ga('bvk.set', 'anonymizeIp', true);
+ga('send', 'pageview');
+ga('bvk.send', 'pageview');
+},150);
+});
+
+</script>
+
+<script src="/plataforma/js/juegoseleccionar1.js"></script>
+<script>
+var loggedIn = false;
+function fixIos()
+{
+	var ua = navigator.userAgent,
+    iOS = /iPad|iPhone|iPod/.test(ua),
+    //iOS11 = /OS 11_0_1|OS 11_0_2|OS 11_0_3|OS 11_1/.test(ua);
+	iOS11 = /OS 11_(\d{1,2})/.test(ua);
+
+    // ios 11 bug caret position
+    if ( iOS && iOS11 ) {
+		$("body").addClass("iosBugFixCaret");
+	}
+	
+}	
+	
+$(document).ready(function($){
+
+$('#medal1top').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud-holder.png" style="height:50px;" />');
+$('#medal2top').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud-holder.png" style="height:50px;" />');
+$('#medal3top').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud-holder.png" style="height:50px;" />');
+$('#medal4top').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud-holder.png" style="height:50px;" />');
+$('#medal5top').html('<img src="https://cdn-t-2.bvkstatic.com/diploma-holder.png" style="height:50px;" />');
+
+
+	$('#medal1').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud-holder.png"  style="height:40px;" />');
+	$('#medal2').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud-holder.png"  style="height:40px;" />');
+	$('#medal3').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud-holder.png"  style="height:40px;" />');
+	$('#medal4').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud-holder.png"  style="height:40px;" />');
+	$('#medal5').html('<img src="https://cdn-t-2.bvkstatic.com/diploma-holder.png"  style="height:40px;" />');
+
+
+checkSession();
+	
+});
+$('#privClick').click(function(){
+	$('#privTab').toggle();
+	console.log("test213");
+});
+
+function checkSession()
+{
+$.post("../check.session.php",
+{
+
+},
+function(data, status){
+	//console.log(""+data);
+	var obj = JSON.parse(data);
+	//console.log(obj.name);
+	//console.log(obj.medals);
+	//console.log(obj);
+
+	if(obj!==false){
+	var tafelMed = [];
+	
+	var medalLength = obj.medals.length;   
+	//console.log(medalLength);
+	var medalCount = 0;
+	var diplomaCount = 0;
+	for (var i = 0; i < medalLength; i++) {
+	// Do something with yourArray[i].
+	if(obj.medals[i].Tafel==1)
+	{
+		tafelMed[obj.medals[i].Stap] = true;
+	}
+	if(obj.medals[i].Diploma==0)
+	{
+		medalCount++;
+	}
+	if(obj.medals[i].Diploma>0)
+	{
+		diplomaCount++;
+	}
+		
+	}
+	
+	$('#medal1top').show();
+	$('#medal2top').show();
+	$('#medal3top').show();
+	$('#medal4top').show();
+	$('#medal5top').show();
+	
+	if(tafelMed[1]==true)
+	{
+		$('#medal1').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud.png"  style="height:40px;" />');
+		$('#medal1top').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud.png" style="height:50px;" />');
+	}
+	else
+	{
+		$('#medal1').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud-holder.png"  style="height:40px;" />');
+		$('#medal1top').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud-holder.png" style="height:50px;" />');
+	}
+	
+	if(tafelMed[2]==true)
+	{
+		$('#medal2').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud.png"  style="height:40px;" />');
+		$('#medal2top').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud.png" style="height:50px;" />');
+	}
+	else
+	{
+		$('#medal2top').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud-holder.png" style="height:50px;" />');
+		$('#medal2').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud-holder.png"  style="height:40px;" />');
+	}
+	
+	if(tafelMed[3]==true)
+	{
+		$('#medal3').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud.png"  style="height:40px;" />');
+		$('#medal3top').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud.png" style="height:50px;" />');
+	}
+	else
+	{
+		$('#medal3top').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud-holder.png" style="height:50px;" />');
+	}
+	
+	if(tafelMed[4]==true)
+	{
+		$('#medal4').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud.png"  style="height:40px;" />');
+		$('#medal4top').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud.png" style="height:50px;" />');
+	}
+	else
+	{
+		$('#medal4top').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud-holder.png" style="height:50px;" />');
+	}
+	
+	
+	if(tafelMed[5]==true)
+	{
+		$('#medal5').html('<img src="https://cdn-t-2.bvkstatic.com/diploma-icon.png"  style="height:40px;" />');
+		$('#medal5top').html('<img src="https://cdn-t-2.bvkstatic.com/diploma-icon.png" style="height:50px;" />');
+	}
+	else
+	{
+		$('#medal5top').html('<img src="https://cdn-t-2.bvkstatic.com/diploma-holder.png" style="height:50px;" />');
+	}
+
+	
+	
+	}
+	
+	$('#medal1').show();
+	$('#medal2').show();
+	$('#medal3').show();
+	$('#medal4').show();
+	$('#medal5').show();
+	//console.log(obj);
+	//console.log(obj[' ']);
+	if(obj.ok==true)
+	{
+		loggedIn = true;
+		console.log("Wel ingelogd");
+		$('#usrVak').html('<div style="float:left;margin-right:30px;color:#40650f;font-weight:bold;font-family:\'Proxima Nova Bold\';">'+medalCount+'<img src="https://cdn-t-2.bvkstatic.com/medalgoud.png"  style="height:20px;position:absolute;top:0px;margin-left:6px;" /><br /> '+diplomaCount+'<img src="https://cdn-t-2.bvkstatic.com/diploma-icon.png"  style="border: 1px solid #109913;height:20px;position:absolute;top:20px;margin-left:3px;" /></div><div style="float:left;color:#40650f;font-family:\'Proxima Nova Bold\';">Bienvenid@ '+obj.name+'<br />- <a style="color:#40650f" href="https://www.tablasdemultiplicar.com/vitrina-de-premios/">&#65279;Vitrina de premios</a><br />- <a style="color:#40650f;font-size:14px;" href="https://www.tablasdemultiplicar.com/logout.php">Desconéctate</a></div>');
+		setTimeout(function() {checkSize(); }, 200);
+	}
+	else{ 
+	$('#usrVak').html('<span id="loglink" class="loginLink"><i class="fa fa-sign-in-alt" aria-hidden="true" style="font-size:20px;width:25px;"></i>Acceso</span><span id="reglink" class="loginLink cd-popup-trigger"><i class="fa fa-user-plus" aria-hidden="true" style="font-size:20px;width:25px;"></i>Regístrate gratis</span>');
+	console.log("niet ingelogd");
+	
+	//open popup
+	$('#reglink').on('click', function(event){
+		event.preventDefault();
+		$('#regVak').addClass('is-visible');
+		fixIos();
+		setTimeout(function() { $('#username').focus(); }, 100);
+	});
+	
+	//close popup
+	$('#regVak').on('click', function(event){
+		if( $(event.target).is('.cd-popup-close') ) {
+			event.preventDefault();
+			$("body").removeClass("iosBugFixCaret");
+			$(this).removeClass('is-visible');
+		}
+	});
+	//close popup when clicking the esc keyboard button
+	$(document).keyup(function(event){
+    	if(event.which=='27'){
+			$("body").removeClass("iosBugFixCaret");
+    		$('#regVak').removeClass('is-visible');
+	    }
+    });
+	
+	
+	
+	$('#loglink').on('click', function(event){
+		event.preventDefault();
+		$('#logVak').addClass('is-visible');
+		fixIos();
+		setTimeout(function() { $('#lUserName').focus(); }, 100);
+		
+		
+	});
+	
+	//close popup
+	$('#logVak').on('click', function(event){
+		if( $(event.target).is('.cd-popup-close') ) {
+			event.preventDefault();
+			$("body").removeClass("iosBugFixCaret");
+			$(this).removeClass('is-visible');
+			$("#lUserName").val("");
+			$("#lPassword").val("");
+		}
+	});
+	//close popup when clicking the esc keyboard button
+	$(document).keyup(function(event){
+    	if(event.which=='27'){
+    		$('#logVak').removeClass('is-visible');
+			
+			$("body").removeClass("iosBugFixCaret");
+			$("#lUserName").val("");
+			$("#lPassword").val("");
+	    }
+    });
+	
+	}
+		$('#usrVak').show();
+	});
+}
+
+
+$(document).ready(function () {
+	$('#regButton').on('click', function(){
+			regFunc();
+			//$('#regUp').html('<strong>Eventjes geduld!</strong><br /><img src="https://www.tafeldiploma.nl/loadinggif.gif" />');
+	
+
+});
+	
+
+$('#logForm input').keydown(function(e) {
+    if (e.keyCode == 13) {
+     loginFunc();
+    }
+});	
+
+$('#logButton').on('click', function(){
+			//$('#regUp').html('<strong>Eventjes geduld!</strong><br /><img src="https://www.tafeldiploma.nl/loadinggif.gif" />');
+		loginFunc();
+		
+});
+
+	});
+	var teLaat = false;
+	function n(n){
+    return n > 9 ? "" + n: "0" + n;
+}
+	var aantalSecnu
+	var tijd = 20;
+	var myCounter;
+
+var tafelvan = 1;
+
+
+	
+	function Countdown(options) {
+  var timer,
+  instance = this,
+  seconds = options.seconds || 10,
+  updateStatus = options.onUpdateStatus || function () {},
+  counterEnd = options.onCounterEnd || function () {};
+
+  function decrementCounter() {
+    updateStatus(seconds);
+    if (seconds === 0) {
+      counterEnd();
+      instance.stop();
+    }
+    seconds--;
+  }
+
+  this.start = function () {
+    clearInterval(timer);
+    timer = 0;
+    seconds = options.seconds;
+    timer = setInterval(decrementCounter, 1000);
+  };
+
+  this.stop = function () {
+    clearInterval(timer);
+  };
+}
+
+var sommen = [];
+ 
+ 
+  if(tafelvan==1)
+ {
+	sommen[0]=[];sommen[0]={get1:"10",get2:"1",ant:"10",mant:"12,11,13",soort:"x"};sommen[1]=[];sommen[1]={get1:"4",get2:"1",ant:"4",mant:"5,2,1",soort:"x"};sommen[2]=[];sommen[2]={get1:"3",get2:"1",ant:"3",mant:"1,9,4",soort:"x"};sommen[3]=[];sommen[3]={get1:"7",get2:"1",ant:"7",mant:"14,3,5",soort:"x"};sommen[4]=[];sommen[4]={get1:"2",get2:"1",ant:"2",mant:"6,1,0",soort:"x"};sommen[5]=[];sommen[5]={get1:"6",get2:"1",ant:"6",mant:"18,12,10",soort:"x"};sommen[6]=[];sommen[6]={get1:"8",get2:"1",ant:"8",mant:"6,24,10",soort:"x"};sommen[7]=[];sommen[7]={get1:"5",get2:"1",ant:"5",mant:"15,2,6",soort:"x"};sommen[8]=[];sommen[8]={get1:"9",get2:"1",ant:"9",mant:"13,27,8",soort:"x"};sommen[9]=[];sommen[9]={get1:"1",get2:"1",ant:"1",mant:"4,5,2",soort:"x"};sommen[10]=[];sommen[10]={get1:"4",get2:"1",ant:"4",mant:"12,2,7",soort:"x"};sommen[11]=[];sommen[11]={get1:"7",get2:"1",ant:"7",mant:"6,11,8",soort:"x"};sommen[12]=[];sommen[12]={get1:"5",get2:"1",ant:"5",mant:"10,8,3",soort:"x"};sommen[13]=[];sommen[13]={get1:"6",get2:"1",ant:"6",mant:"3,9,5",soort:"x"};sommen[14]=[];sommen[14]={get1:"3",get2:"1",ant:"3",mant:"9,5,7",soort:"x"};sommen[15]=[];sommen[15]={get1:"8",get2:"1",ant:"8",mant:"6,11,24",soort:"x"};sommen[16]=[];sommen[16]={get1:"9",get2:"1",ant:"9",mant:"11,10,13",soort:"x"};sommen[17]=[];sommen[17]={get1:"10",get2:"1",ant:"10",mant:"13,14,30",soort:"x"};sommen[18]=[];sommen[18]={get1:"2",get2:"1",ant:"2",mant:"4,0,5",soort:"x"};sommen[19]=[];sommen[19]={get1:"1",get2:"1",ant:"1",mant:"4,5,2",soort:"x"}
+ }
+ else if(tafelvan==2)
+ {
+	sommen[0]=[];sommen[0]={get1:"7",get2:"2",ant:"14",mant:"16,12,21",soort:"x"};sommen[1]=[];sommen[1]={get1:"5",get2:"2",ant:"10",mant:"14,13,20",soort:"x"};sommen[2]=[];sommen[2]={get1:"2",get2:"2",ant:"4",mant:"0,3,2",soort:"x"};sommen[3]=[];sommen[3]={get1:"3",get2:"2",ant:"6",mant:"9,5,12",soort:"x"};sommen[4]=[];sommen[4]={get1:"8",get2:"2",ant:"16",mant:"24,8,14",soort:"x"};sommen[5]=[];sommen[5]={get1:"6",get2:"2",ant:"12",mant:"14,18,11",soort:"x"};sommen[6]=[];sommen[6]={get1:"4",get2:"2",ant:"8",mant:"11,9,4",soort:"x"};sommen[7]=[];sommen[7]={get1:"1",get2:"2",ant:"2",mant:"4,1,6",soort:"x"};sommen[8]=[];sommen[8]={get1:"9",get2:"2",ant:"18",mant:"21,9,27",soort:"x"};sommen[9]=[];sommen[9]={get1:"10",get2:"2",ant:"20",mant:"10,18,19",soort:"x"};sommen[10]=[];sommen[10]={get1:"7",get2:"2",ant:"14",mant:"18,10,16",soort:"x"};sommen[11]=[];sommen[11]={get1:"6",get2:"2",ant:"12",mant:"11,13,18",soort:"x"};sommen[12]=[];sommen[12]={get1:"2",get2:"2",ant:"4",mant:"1,5,7",soort:"x"};sommen[13]=[];sommen[13]={get1:"10",get2:"2",ant:"20",mant:"10,18,16",soort:"x"};sommen[14]=[];sommen[14]={get1:"9",get2:"2",ant:"18",mant:"17,9,22",soort:"x"};sommen[15]=[];sommen[15]={get1:"4",get2:"2",ant:"8",mant:"4,10,11",soort:"x"};sommen[16]=[];sommen[16]={get1:"1",get2:"2",ant:"2",mant:"0,3,1",soort:"x"};sommen[17]=[];sommen[17]={get1:"5",get2:"2",ant:"10",mant:"13,15,11",soort:"x"};sommen[18]=[];sommen[18]={get1:"8",get2:"2",ant:"16",mant:"32,15,17",soort:"x"};sommen[19]=[];sommen[19]={get1:"3",get2:"2",ant:"6",mant:"10,5,3",soort:"x"}
+ }
+ else if(tafelvan==3)
+ {
+	sommen[0]=[];sommen[0]={get1:"7",get2:"3",ant:"21",mant:"22,23,17",soort:"x"};sommen[1]=[];sommen[1]={get1:"8",get2:"3",ant:"24",mant:"40,26,18",soort:"x"};sommen[2]=[];sommen[2]={get1:"10",get2:"3",ant:"30",mant:"50,31,10",soort:"x"};sommen[3]=[];sommen[3]={get1:"4",get2:"3",ant:"12",mant:"11,20,16",soort:"x"};sommen[4]=[];sommen[4]={get1:"9",get2:"3",ant:"27",mant:"30,9,28",soort:"x"};sommen[5]=[];sommen[5]={get1:"3",get2:"3",ant:"9",mant:"12,8,10",soort:"x"};sommen[6]=[];sommen[6]={get1:"2",get2:"3",ant:"6",mant:"9,7,5",soort:"x"};sommen[7]=[];sommen[7]={get1:"6",get2:"3",ant:"18",mant:"17,21,30",soort:"x"};sommen[8]=[];sommen[8]={get1:"1",get2:"3",ant:"3",mant:"7,0,6",soort:"x"};sommen[9]=[];sommen[9]={get1:"5",get2:"3",ant:"15",mant:"9,20,5",soort:"x"};sommen[10]=[];sommen[10]={get1:"6",get2:"3",ant:"18",mant:"24,17,21",soort:"x"};sommen[11]=[];sommen[11]={get1:"8",get2:"3",ant:"24",mant:"8,16,40",soort:"x"};sommen[12]=[];sommen[12]={get1:"4",get2:"3",ant:"12",mant:"20,8,10",soort:"x"};sommen[13]=[];sommen[13]={get1:"7",get2:"3",ant:"21",mant:"18,25,14",soort:"x"};sommen[14]=[];sommen[14]={get1:"2",get2:"3",ant:"6",mant:"2,8,9",soort:"x"};sommen[15]=[];sommen[15]={get1:"1",get2:"3",ant:"3",mant:"9,1,0",soort:"x"};sommen[16]=[];sommen[16]={get1:"9",get2:"3",ant:"27",mant:"23,26,33",soort:"x"};sommen[17]=[];sommen[17]={get1:"5",get2:"3",ant:"15",mant:"20,14,18",soort:"x"};sommen[18]=[];sommen[18]={get1:"3",get2:"3",ant:"9",mant:"7,13,15",soort:"x"};sommen[19]=[];sommen[19]={get1:"10",get2:"3",ant:"30",mant:"20,27,29",soort:"x"}
+ }
+ else if(tafelvan==4)
+ {
+	sommen[0]=[];sommen[0]={get1:"8",get2:"4",ant:"32",mant:"34,48,36",soort:"x"};sommen[1]=[];sommen[1]={get1:"1",get2:"4",ant:"4",mant:"3,6,0",soort:"x"};sommen[2]=[];sommen[2]={get1:"5",get2:"4",ant:"20",mant:"10,12,25",soort:"x"};sommen[3]=[];sommen[3]={get1:"10",get2:"4",ant:"40",mant:"48,44,37",soort:"x"};sommen[4]=[];sommen[4]={get1:"6",get2:"4",ant:"24",mant:"21,26,12",soort:"x"};sommen[5]=[];sommen[5]={get1:"3",get2:"4",ant:"12",mant:"14,18,13",soort:"x"};sommen[6]=[];sommen[6]={get1:"2",get2:"4",ant:"8",mant:"16,10,12",soort:"x"};sommen[7]=[];sommen[7]={get1:"9",get2:"4",ant:"36",mant:"38,54,45",soort:"x"};sommen[8]=[];sommen[8]={get1:"4",get2:"4",ant:"16",mant:"20,24,19",soort:"x"};sommen[9]=[];sommen[9]={get1:"7",get2:"4",ant:"28",mant:"24,25,31",soort:"x"};sommen[10]=[];sommen[10]={get1:"5",get2:"4",ant:"20",mant:"19,30,16",soort:"x"};sommen[11]=[];sommen[11]={get1:"3",get2:"4",ant:"12",mant:"6,18,13",soort:"x"};sommen[12]=[];sommen[12]={get1:"2",get2:"4",ant:"8",mant:"16,11,5",soort:"x"};sommen[13]=[];sommen[13]={get1:"10",get2:"4",ant:"40",mant:"42,37,44",soort:"x"};sommen[14]=[];sommen[14]={get1:"9",get2:"4",ant:"36",mant:"40,54,32",soort:"x"};sommen[15]=[];sommen[15]={get1:"8",get2:"4",ant:"32",mant:"35,31,36",soort:"x"};sommen[16]=[];sommen[16]={get1:"7",get2:"4",ant:"28",mant:"29,14,42",soort:"x"};sommen[17]=[];sommen[17]={get1:"4",get2:"4",ant:"16",mant:"15,20,18",soort:"x"};sommen[18]=[];sommen[18]={get1:"1",get2:"4",ant:"4",mant:"6,5,7",soort:"x"};sommen[19]=[];sommen[19]={get1:"6",get2:"4",ant:"24",mant:"32,36,25",soort:"x"}
+ }
+ else if(tafelvan==5)
+ {
+	sommen[0]=[];sommen[0]={get1:"6",get2:"5",ant:"30",mant:"26,20,31",soort:"x"};sommen[1]=[];sommen[1]={get1:"1",get2:"5",ant:"5",mant:"4,6,9",soort:"x"};sommen[2]=[];sommen[2]={get1:"8",get2:"5",ant:"40",mant:"30,41,38",soort:"x"};sommen[3]=[];sommen[3]={get1:"3",get2:"5",ant:"15",mant:"12,21,20",soort:"x"};sommen[4]=[];sommen[4]={get1:"10",get2:"5",ant:"50",mant:"40,49,46",soort:"x"};sommen[5]=[];sommen[5]={get1:"5",get2:"5",ant:"25",mant:"35,21,27",soort:"x"};sommen[6]=[];sommen[6]={get1:"2",get2:"5",ant:"10",mant:"9,11,8",soort:"x"};sommen[7]=[];sommen[7]={get1:"4",get2:"5",ant:"20",mant:"23,10,16",soort:"x"};sommen[8]=[];sommen[8]={get1:"9",get2:"5",ant:"45",mant:"36,48,41",soort:"x"};sommen[9]=[];sommen[9]={get1:"7",get2:"5",ant:"35",mant:"40,33,30",soort:"x"};sommen[10]=[];sommen[10]={get1:"2",get2:"5",ant:"10",mant:"11,13,8",soort:"x"};sommen[11]=[];sommen[11]={get1:"8",get2:"5",ant:"40",mant:"32,37,30",soort:"x"};sommen[12]=[];sommen[12]={get1:"5",get2:"5",ant:"25",mant:"15,27,23",soort:"x"};sommen[13]=[];sommen[13]={get1:"4",get2:"5",ant:"20",mant:"30,22,15",soort:"x"};sommen[14]=[];sommen[14]={get1:"3",get2:"5",ant:"15",mant:"20,13,25",soort:"x"};sommen[15]=[];sommen[15]={get1:"9",get2:"5",ant:"45",mant:"36,35,46",soort:"x"};sommen[16]=[];sommen[16]={get1:"1",get2:"5",ant:"5",mant:"4,3,9",soort:"x"};sommen[17]=[];sommen[17]={get1:"7",get2:"5",ant:"35",mant:"39,32,33",soort:"x"};sommen[18]=[];sommen[18]={get1:"6",get2:"5",ant:"30",mant:"33,27,36",soort:"x"};sommen[19]=[];sommen[19]={get1:"10",get2:"5",ant:"50",mant:"47,30,51",soort:"x"}
+ }
+ else if(tafelvan==6)
+ {
+	sommen[0]=[];sommen[0]={get1:"5",get2:"6",ant:"30",mant:"31,34,24",soort:"x"};sommen[1]=[];sommen[1]={get1:"2",get2:"6",ant:"12",mant:"13,9,8",soort:"x"};sommen[2]=[];sommen[2]={get1:"4",get2:"6",ant:"24",mant:"18,27,23",soort:"x"};sommen[3]=[];sommen[3]={get1:"10",get2:"6",ant:"60",mant:"66,63,48",soort:"x"};sommen[4]=[];sommen[4]={get1:"8",get2:"6",ant:"48",mant:"50,42,54",soort:"x"};sommen[5]=[];sommen[5]={get1:"3",get2:"6",ant:"18",mant:"6,17,20",soort:"x"};sommen[6]=[];sommen[6]={get1:"9",get2:"6",ant:"54",mant:"42,36,63",soort:"x"};sommen[7]=[];sommen[7]={get1:"6",get2:"6",ant:"36",mant:"35,39,24",soort:"x"};sommen[8]=[];sommen[8]={get1:"7",get2:"6",ant:"42",mant:"36,41,28",soort:"x"};sommen[9]=[];sommen[9]={get1:"1",get2:"6",ant:"6",mant:"4,10,8",soort:"x"};sommen[10]=[];sommen[10]={get1:"5",get2:"6",ant:"30",mant:"34,31,40",soort:"x"};sommen[11]=[];sommen[11]={get1:"4",get2:"6",ant:"24",mant:"21,18,28",soort:"x"};sommen[12]=[];sommen[12]={get1:"10",get2:"6",ant:"60",mant:"80,62,56",soort:"x"};sommen[13]=[];sommen[13]={get1:"2",get2:"6",ant:"12",mant:"8,10,11",soort:"x"};sommen[14]=[];sommen[14]={get1:"3",get2:"6",ant:"18",mant:"20,14,21",soort:"x"};sommen[15]=[];sommen[15]={get1:"8",get2:"6",ant:"48",mant:"44,32,49",soort:"x"};sommen[16]=[];sommen[16]={get1:"9",get2:"6",ant:"54",mant:"53,42,50",soort:"x"};sommen[17]=[];sommen[17]={get1:"7",get2:"6",ant:"42",mant:"28,38,40",soort:"x"};sommen[18]=[];sommen[18]={get1:"1",get2:"6",ant:"6",mant:"4,8,12",soort:"x"};sommen[19]=[];sommen[19]={get1:"6",get2:"6",ant:"36",mant:"33,37,35",soort:"x"}
+ }
+ else if(tafelvan==7)
+ {
+	sommen[0]=[];sommen[0]={get1:"7",get2:"7",ant:"49",mant:"42,63,51",soort:"x"};sommen[1]=[];sommen[1]={get1:"2",get2:"7",ant:"14",mant:"21,16,17",soort:"x"};sommen[2]=[];sommen[2]={get1:"3",get2:"7",ant:"21",mant:"18,15,19",soort:"x"};sommen[3]=[];sommen[3]={get1:"1",get2:"7",ant:"7",mant:"3,14,10",soort:"x"};sommen[4]=[];sommen[4]={get1:"6",get2:"7",ant:"42",mant:"44,56,40",soort:"x"};sommen[5]=[];sommen[5]={get1:"9",get2:"7",ant:"63",mant:"59,64,65",soort:"x"};sommen[6]=[];sommen[6]={get1:"4",get2:"7",ant:"28",mant:"32,31,24",soort:"x"};sommen[7]=[];sommen[7]={get1:"10",get2:"7",ant:"70",mant:"73,80,77",soort:"x"};sommen[8]=[];sommen[8]={get1:"8",get2:"7",ant:"56",mant:"54,40,70",soort:"x"};sommen[9]=[];sommen[9]={get1:"5",get2:"7",ant:"35",mant:"34,33,49",soort:"x"};sommen[10]=[];sommen[10]={get1:"1",get2:"7",ant:"7",mant:"14,21,8",soort:"x"};sommen[11]=[];sommen[11]={get1:"10",get2:"7",ant:"70",mant:"73,67,66",soort:"x"};sommen[12]=[];sommen[12]={get1:"8",get2:"7",ant:"56",mant:"55,42,40",soort:"x"};sommen[13]=[];sommen[13]={get1:"9",get2:"7",ant:"63",mant:"62,59,61",soort:"x"};sommen[14]=[];sommen[14]={get1:"6",get2:"7",ant:"42",mant:"41,38,35",soort:"x"};sommen[15]=[];sommen[15]={get1:"3",get2:"7",ant:"21",mant:"18,22,28",soort:"x"};sommen[16]=[];sommen[16]={get1:"7",get2:"7",ant:"49",mant:"47,50,48",soort:"x"};sommen[17]=[];sommen[17]={get1:"2",get2:"7",ant:"14",mant:"18,28,17",soort:"x"};sommen[18]=[];sommen[18]={get1:"4",get2:"7",ant:"28",mant:"32,25,31",soort:"x"};sommen[19]=[];sommen[19]={get1:"5",get2:"7",ant:"35",mant:"30,38,39",soort:"x"}
+ }
+  else if(tafelvan==8)
+ {
+	sommen[0]=[];sommen[0]={get1:"5",get2:"8",ant:"40",mant:"56,32,45",soort:"x"};sommen[1]=[];sommen[1]={get1:"9",get2:"8",ant:"72",mant:"73,54,88",soort:"x"};sommen[2]=[];sommen[2]={get1:"10",get2:"8",ant:"80",mant:"70,82,83",soort:"x"};sommen[3]=[];sommen[3]={get1:"7",get2:"8",ant:"56",mant:"57,40,48",soort:"x"};sommen[4]=[];sommen[4]={get1:"3",get2:"8",ant:"24",mant:"25,30,21",soort:"x"};sommen[5]=[];sommen[5]={get1:"8",get2:"8",ant:"64",mant:"56,61,62",soort:"x"};sommen[6]=[];sommen[6]={get1:"4",get2:"8",ant:"32",mant:"28,34,35",soort:"x"};sommen[7]=[];sommen[7]={get1:"2",get2:"8",ant:"16",mant:"20,13,8",soort:"x"};sommen[8]=[];sommen[8]={get1:"6",get2:"8",ant:"48",mant:"49,56,32",soort:"x"};sommen[9]=[];sommen[9]={get1:"1",get2:"8",ant:"8",mant:"16,5,7",soort:"x"};sommen[10]=[];sommen[10]={get1:"1",get2:"8",ant:"8",mant:"11,7,5",soort:"x"};sommen[11]=[];sommen[11]={get1:"9",get2:"8",ant:"72",mant:"69,70,64",soort:"x"};sommen[12]=[];sommen[12]={get1:"2",get2:"8",ant:"16",mant:"14,19,13",soort:"x"};sommen[13]=[];sommen[13]={get1:"3",get2:"8",ant:"24",mant:"20,32,21",soort:"x"};sommen[14]=[];sommen[14]={get1:"4",get2:"8",ant:"32",mant:"40,30,29",soort:"x"};sommen[15]=[];sommen[15]={get1:"8",get2:"8",ant:"64",mant:"56,68,72",soort:"x"};sommen[16]=[];sommen[16]={get1:"6",get2:"8",ant:"48",mant:"54,60,46",soort:"x"};sommen[17]=[];sommen[17]={get1:"10",get2:"8",ant:"80",mant:"83,64,79",soort:"x"};sommen[18]=[];sommen[18]={get1:"5",get2:"8",ant:"40",mant:"37,30,24",soort:"x"};sommen[19]=[];sommen[19]={get1:"7",get2:"8",ant:"56",mant:"72,58,53",soort:"x"}
+ }
+  else if(tafelvan==9)
+ {
+	sommen[0]=[];sommen[0]={get1:"8",get2:"9",ant:"72",mant:"64,81,70",soort:"x"};sommen[1]=[];sommen[1]={get1:"7",get2:"9",ant:"63",mant:"54,49,61",soort:"x"};sommen[2]=[];sommen[2]={get1:"4",get2:"9",ant:"36",mant:"37,39,34",soort:"x"};sommen[3]=[];sommen[3]={get1:"1",get2:"9",ant:"9",mant:"11,18,8",soort:"x"};sommen[4]=[];sommen[4]={get1:"6",get2:"9",ant:"54",mant:"72,53,42",soort:"x"};sommen[5]=[];sommen[5]={get1:"3",get2:"9",ant:"27",mant:"23,29,31",soort:"x"};sommen[6]=[];sommen[6]={get1:"2",get2:"9",ant:"18",mant:"21,14,16",soort:"x"};sommen[7]=[];sommen[7]={get1:"10",get2:"9",ant:"90",mant:"86,99,72",soort:"x"};sommen[8]=[];sommen[8]={get1:"5",get2:"9",ant:"45",mant:"50,42,35",soort:"x"};sommen[9]=[];sommen[9]={get1:"9",get2:"9",ant:"81",mant:"72,77,80",soort:"x"};sommen[10]=[];sommen[10]={get1:"1",get2:"9",ant:"9",mant:"10,5,18",soort:"x"};sommen[11]=[];sommen[11]={get1:"7",get2:"9",ant:"63",mant:"49,45,77",soort:"x"};sommen[12]=[];sommen[12]={get1:"4",get2:"9",ant:"36",mant:"32,27,37",soort:"x"};sommen[13]=[];sommen[13]={get1:"5",get2:"9",ant:"45",mant:"42,50,41",soort:"x"};sommen[14]=[];sommen[14]={get1:"9",get2:"9",ant:"81",mant:"90,99,80",soort:"x"};sommen[15]=[];sommen[15]={get1:"2",get2:"9",ant:"18",mant:"22,27,20",soort:"x"};sommen[16]=[];sommen[16]={get1:"10",get2:"9",ant:"90",mant:"94,89,81",soort:"x"};sommen[17]=[];sommen[17]={get1:"3",get2:"9",ant:"27",mant:"33,45,36",soort:"x"};sommen[18]=[];sommen[18]={get1:"6",get2:"9",ant:"54",mant:"63,52,56",soort:"x"};sommen[19]=[];sommen[19]={get1:"8",get2:"9",ant:"72",mant:"71,63,74",soort:"x"}
+ }
+  else if(tafelvan==10)
+ {
+	sommen[0]=[];sommen[0]={get1:"6",get2:"10",ant:"60",mant:"50,59,62",soort:"x"};sommen[1]=[];sommen[1]={get1:"7",get2:"10",ant:"70",mant:"84,66,90",soort:"x"};sommen[2]=[];sommen[2]={get1:"3",get2:"10",ant:"30",mant:"31,36,40",soort:"x"};sommen[3]=[];sommen[3]={get1:"1",get2:"10",ant:"10",mant:"14,30,12",soort:"x"};sommen[4]=[];sommen[4]={get1:"2",get2:"10",ant:"20",mant:"19,18,10",soort:"x"};sommen[5]=[];sommen[5]={get1:"8",get2:"10",ant:"80",mant:"84,64,70",soort:"x"};sommen[6]=[];sommen[6]={get1:"10",get2:"10",ant:"100",mant:"96,98,90",soort:"x"};sommen[7]=[];sommen[7]={get1:"4",get2:"10",ant:"40",mant:"30,36,32",soort:"x"};sommen[8]=[];sommen[8]={get1:"9",get2:"10",ant:"90",mant:"86,87,91",soort:"x"};sommen[9]=[];sommen[9]={get1:"5",get2:"10",ant:"50",mant:"47,48,45",soort:"x"};sommen[10]=[];sommen[10]={get1:"10",get2:"10",ant:"100",mant:"120,102,103",soort:"x"};sommen[11]=[];sommen[11]={get1:"7",get2:"10",ant:"70",mant:"69,60,77",soort:"x"};sommen[12]=[];sommen[12]={get1:"3",get2:"10",ant:"30",mant:"50,28,24",soort:"x"};sommen[13]=[];sommen[13]={get1:"2",get2:"10",ant:"20",mant:"18,19,40",soort:"x"};sommen[14]=[];sommen[14]={get1:"9",get2:"10",ant:"90",mant:"100,72,87",soort:"x"};sommen[15]=[];sommen[15]={get1:"4",get2:"10",ant:"40",mant:"50,48,60",soort:"x"};sommen[16]=[];sommen[16]={get1:"5",get2:"10",ant:"50",mant:"40,70,45",soort:"x"};sommen[17]=[];sommen[17]={get1:"1",get2:"10",ant:"10",mant:"9,8,6",soort:"x"};sommen[18]=[];sommen[18]={get1:"8",get2:"10",ant:"80",mant:"78,72,81",soort:"x"};sommen[19]=[];sommen[19]={get1:"6",get2:"10",ant:"60",mant:"66,54,63",soort:"x"}
+ }
+  else if(tafelvan==11)
+ {
+	sommen[0]=[];sommen[0]={get1:"7",get2:"11",ant:"77",mant:"80,55,91",soort:"x"};sommen[1]=[];sommen[1]={get1:"5",get2:"11",ant:"55",mant:"58,45,52",soort:"x"};sommen[2]=[];sommen[2]={get1:"3",get2:"11",ant:"33",mant:"29,37,55",soort:"x"};sommen[3]=[];sommen[3]={get1:"10",get2:"11",ant:"110",mant:"108,107,132",soort:"x"};sommen[4]=[];sommen[4]={get1:"8",get2:"11",ant:"88",mant:"77,110,85",soort:"x"};sommen[5]=[];sommen[5]={get1:"6",get2:"11",ant:"66",mant:"77,70,72",soort:"x"};sommen[6]=[];sommen[6]={get1:"2",get2:"11",ant:"22",mant:"24,33,23",soort:"x"};sommen[7]=[];sommen[7]={get1:"9",get2:"11",ant:"99",mant:"108,98,90",soort:"x"};sommen[8]=[];sommen[8]={get1:"1",get2:"11",ant:"11",mant:"15,13,14",soort:"x"};sommen[9]=[];sommen[9]={get1:"4",get2:"11",ant:"44",mant:"52,47,55",soort:"x"};sommen[10]=[];sommen[10]={get1:"10",get2:"11",ant:"110",mant:"90,88,114",soort:"x"};sommen[11]=[];sommen[11]={get1:"7",get2:"11",ant:"77",mant:"80,88,55",soort:"x"};sommen[12]=[];sommen[12]={get1:"4",get2:"11",ant:"44",mant:"45,43,55",soort:"x"};sommen[13]=[];sommen[13]={get1:"6",get2:"11",ant:"66",mant:"65,78,44",soort:"x"};sommen[14]=[];sommen[14]={get1:"2",get2:"11",ant:"22",mant:"21,19,11",soort:"x"};sommen[15]=[];sommen[15]={get1:"8",get2:"11",ant:"88",mant:"91,90,85",soort:"x"};sommen[16]=[];sommen[16]={get1:"1",get2:"11",ant:"11",mant:"15,8,22",soort:"x"};sommen[17]=[];sommen[17]={get1:"9",get2:"11",ant:"99",mant:"95,81,77",soort:"x"};sommen[18]=[];sommen[18]={get1:"5",get2:"11",ant:"55",mant:"52,54,60",soort:"x"};sommen[19]=[];sommen[19]={get1:"3",get2:"11",ant:"33",mant:"31,37,34",soort:"x"}
+ }
+  else if(tafelvan==12)
+ {
+	sommen[0]=[];sommen[0]={get1:"10",get2:"12",ant:"120",mant:"122,96,110",soort:"x"};sommen[1]=[];sommen[1]={get1:"8",get2:"12",ant:"96",mant:"95,120,94",soort:"x"};sommen[2]=[];sommen[2]={get1:"6",get2:"12",ant:"72",mant:"78,68,48",soort:"x"};sommen[3]=[];sommen[3]={get1:"5",get2:"12",ant:"60",mant:"65,61,64",soort:"x"};sommen[4]=[];sommen[4]={get1:"1",get2:"12",ant:"12",mant:"24,8,9",soort:"x"};sommen[5]=[];sommen[5]={get1:"4",get2:"12",ant:"48",mant:"47,49,44",soort:"x"};sommen[6]=[];sommen[6]={get1:"2",get2:"12",ant:"24",mant:"27,36,23",soort:"x"};sommen[7]=[];sommen[7]={get1:"9",get2:"12",ant:"108",mant:"110,99,117",soort:"x"};sommen[8]=[];sommen[8]={get1:"7",get2:"12",ant:"84",mant:"82,98,86",soort:"x"};sommen[9]=[];sommen[9]={get1:"3",get2:"12",ant:"36",mant:"33,42,32",soort:"x"};sommen[10]=[];sommen[10]={get1:"4",get2:"12",ant:"48",mant:"51,49,52",soort:"x"};sommen[11]=[];sommen[11]={get1:"5",get2:"12",ant:"60",mant:"84,50,48",soort:"x"};sommen[12]=[];sommen[12]={get1:"3",get2:"12",ant:"36",mant:"30,33,42",soort:"x"};sommen[13]=[];sommen[13]={get1:"7",get2:"12",ant:"84",mant:"96,108,82",soort:"x"};sommen[14]=[];sommen[14]={get1:"6",get2:"12",ant:"72",mant:"78,84,71",soort:"x"};sommen[15]=[];sommen[15]={get1:"2",get2:"12",ant:"24",mant:"28,12,25",soort:"x"};sommen[16]=[];sommen[16]={get1:"1",get2:"12",ant:"12",mant:"11,36,10",soort:"x"};sommen[17]=[];sommen[17]={get1:"9",get2:"12",ant:"108",mant:"117,104,105",soort:"x"};sommen[18]=[];sommen[18]={get1:"8",get2:"12",ant:"96",mant:"99,80,84",soort:"x"};sommen[19]=[];sommen[19]={get1:"10",get2:"12",ant:"120",mant:"116,122,119",soort:"x"}
+ }
+ 
+  
+ 
+ 
+
+window.mobileAndTabletcheck = function() {
+  var check = false;
+  (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) check = true;})(navigator.userAgent||navigator.vendor||window.opera);
+  return check;
+};
+var mobiel = window.mobileAndTabletcheck();
+var klik = true;
+var aantalSommen = 15;
+var tijd = 20;
+var meerkeuze = 0;
+var somNr = 0;
+var perc = 0;
+var aantalGoed = 0;
+var aantalFout = 0;
+var buttonVolgende = false;
+var gAntwoord = 0;
+var laatstGeklikt = "";
+
+sommen = shuffle(sommen);
+function erase() 
+{
+
+}
+
+
+
+function typ(varT)
+{
+	if(!buttonVolgende)
+	{
+		console.log("yyooyo");
+		//document.forms["somForm"]["antw"].value += varT;
+	}
+}
+
+
+function check()
+{	
+	if(!buttonVolgende)
+	{
+		
+		if(!teLaat)
+		{
+			if(tijd!=0){myCounter.stop();}
+		}
+		var antwoord;
+		if(mobiel)
+		{
+			if(meerkeuze == 1)
+			{
+				antwoord = gAntwoord.replace(",", ".");
+			}
+			else
+			{
+				antwoord = document.getElementById("antw").innerHTML;
+				antwoord = antwoord.replace(",", ".");	
+			}
+			antwoord =  parseFloat(antwoord);
+		}
+		else
+		{
+			if(meerkeuze == 1)
+			{
+				antwoord = gAntwoord.replace(",", ".");
+			}
+			else
+			{
+				antwoord = document.getElementById("antw2").value;
+				//console.log(antwoord);
+				antwoord = antwoord.replace(",", ".");	
+			}
+			antwoord =  parseFloat(antwoord);
+			
+		}
+		if(antwoord !== "" && antwoord ==  sommen[somNr].ant && !teLaat) 
+		{
+			//goed
+			console.log("goed");
+			aantalGoed++;
+			if(meerkeuze==1)
+			{
+				$('#sbmtButton').show();
+				$("#"+laatstGeklikt).addClass("goed");
+			}
+			else
+			{
+				if(mobiel)
+				{
+					document.getElementById("vraagVak").style.background = "#1DD065";
+				}
+				else
+				{
+					document.getElementById("antw2").style.background = "#1DD065";
+					document.getElementById("antw2").style.color = "#FFF";
+				}
+			}
+			
+			document.getElementById("timer").style.background = "#1DD065";
+			document.getElementById("timer").innerHTML="<p style=\"color:#FFF\">Goed!</p>";
+			klik = false;
+			$("#"+laatstGeklikt).effect( "transfer",{ to: "#goedBlok" }, 500 ,callback ); 
+		}
+		else
+		{
+			//fout
+			var goedeAntwoord = sommen[somNr].ant;
+			goedeAntwoord = goedeAntwoord.replace(".", ",");
+			$("#goedeAntwoord").html("Buena respuesta: <strong style=\" \">"+goedeAntwoord+"</strong>");
+			$("#goedeAntwoord").show(500);  
+			
+			
+			if(teLaat)
+			{
+				console.log("te laat");
+				document.getElementById("antw2").value = "Te laat...";
+			} 
+			else if(document.getElementById("antw2").value == "")
+			{
+				console.log("niets getypt");
+				document.getElementById("antw2").value = "Geen antwoord ingevuld...";
+			}
+			console.log("fout");
+			aantalFout++;
+			
+			if(meerkeuze==1)
+			{
+				$('#sbmtButton').show();
+				if(!teLaat)
+				{
+					$("#"+laatstGeklikt).addClass("fout");
+				}
+				if($('#mka1').html()==goedeAntwoord)
+				{
+					setTimeout(function (){$("#mka1").addClass("goed")}, 500);
+				}
+				else if($('#mka2').html()==goedeAntwoord)
+				{
+					setTimeout(function (){$("#mka2").addClass("goed")}, 500);
+				}
+				else if($('#mka3').html()==goedeAntwoord)
+				{
+					setTimeout(function (){$("#mka3").addClass("goed")}, 500);
+				}
+				else if($('#mka4').html()==goedeAntwoord)
+				{
+					setTimeout(function (){$("#mka4").addClass("goed")}, 500);
+				}
+			}
+			else
+			{
+				if(mobiel)
+				{
+					document.getElementById("vraagVak").style.background = "#DF1C3C";
+				}
+				else
+				{
+					document.getElementById("antw2").style.background = "#DF1C3C";
+					document.getElementById("antw2").style.color = "#FFF";
+				}
+			}
+			document.getElementById("timer").style.background = "#DF1C3C";
+			document.getElementById("timer").innerHTML="<p style=\"color:#FFF\">Fout</p>";
+			klik = false;
+			$("#"+laatstGeklikt).effect( "transfer",{ to: "#foutBlok" }, 500 ,callback ); 
+		}
+		document.getElementById("sbmtButton").style.visibility = "hidden";
+		buttonVolgende= true;
+		document.getElementById("antw2").readOnly = true;
+		//document.getElementById("toetsVak").style.display = "none";
+		$("#toetsVak").hide(500);
+	
+	} 
+	else if(klik==true)
+	{
+		
+		$("#goedeAntwoord").hide();
+		if (somNr >= aantalSommen)
+		{
+			if(aantalGoed == aantalSommen)
+			{
+				//alles goed
+				addPrize(1,4,0,0);
+				$('#medal4top').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud.png" style="height:50px;" />');
+				$('#medal4').html('<img src="https://cdn-t-2.bvkstatic.com/medalgoud.png" style="height:40px;" />');
+				if(loggedIn)
+				{
+					$("#mkAllesgoed").html("<img src=\"https://cdn-t-2.bvkstatic.com/medalgoud.png\" class=\"swing\" /><br />  <a style=\"font-size:25px;\" href=\"https://www.tablasdemultiplicar.com/vitrina-de-premios/\">Contempla la medalla en la vitrina de premios</a>");
+				}
+				else
+				{
+					$("#mkAllesgoed").html("<img src=\"https://cdn-t-2.bvkstatic.com/medalgoud.png\" class=\"swing\" /><br /> <span style=\"font-size:20px;\">¡Regístrate gratis para poder guardar tu medalla en la <a href=\"https://www.tablasdemultiplicar.com/vitrina-de-premios/\">&#65279;Vitrina de premios</a>!</span>");
+				}
+				
+				$("#mkAllesgoed").show(200); 
+				
+			}
+			else
+			{
+				$("#mkAllesgoed").hide();
+			}
+			//eindscherm
+				//document.getElementById("som").innerHTML = "Goed gedaan!!!" ;
+				document.getElementById("aGoedEind").innerHTML = aantalGoed;
+				document.getElementById("aFoutEind").innerHTML = aantalFout;
+				document.getElementById("agoEind").innerHTML = "Correcto: "+aantalGoed+ " x "+aantalSommen;
+				document.getElementById("afoEind").innerHTML = "Incorrecto: "+aantalFout+ " x "+aantalSommen;
+				$("#eindeBlok").show();
+				$("#somBlok").hide(); 
+				$("#footr").show();
+
+		}
+		else
+		{
+		
+			if(tijd!=0){myCounter.start();}
+			buttonVolgende = false;
+						document.getElementById("som").innerHTML = sommen[somNr].get2+ " x "+sommen[somNr].get1+ " "   ;
+						//document.getElementById("toetsVak").style.display = "block";
+			if(meerkeuze==1)
+			{
+				$('#sbmtButton').hide();
+				
+				$('#toetsVak').hide();
+				$("#mka1").removeClass("goed");
+				$("#mka2").removeClass("goed");
+				$("#mka3").removeClass("goed");
+				$("#mka4").removeClass("goed");
+				$("#mka1").removeClass("fout");
+				$("#mka2").removeClass("fout");
+				$("#mka3").removeClass("fout");
+				$("#mka4").removeClass("fout");
+				
+				var res = sommen[somNr].mant.split(",");
+				var antwoordenmk = [];
+				antwoordenmk[0] = res[0];
+				antwoordenmk[1] = res[1];
+				antwoordenmk[2] = res[2];
+				antwoordenmk[3] = sommen[somNr].ant;
+				
+				shuffle(antwoordenmk);
+				
+				document.getElementById("mka1").innerHTML = antwoordenmk[0].replace(".", ",")+"";
+				document.getElementById("mka2").innerHTML = antwoordenmk[1].replace(".", ",")+"";
+				document.getElementById("mka3").innerHTML = antwoordenmk[2].replace(".", ",")+"";
+				document.getElementById("mka4").innerHTML = antwoordenmk[3].replace(".", ",")+"";
+
+
+			}
+			if(mobiel)
+			{
+				if(meerkeuze!=1)
+				{
+					$("#toetsVak").show(500);
+				}
+				
+				document.getElementById("vraagVak").style.background = "#336ADB";
+				if(document.getElementById("som").innerHTML.length < 10)
+			{
+				document.getElementById("som").style.fontSize = "30px";
+				document.getElementById("antw").style.fontSize = "30px";
+				document.getElementById("vraagVak").style.padding = "20px";
+			}
+			else
+			{
+				document.getElementById("vraagVak").style.padding = "25px";
+			}
+			}
+			else
+			{
+				document.getElementById("antw2").style.background = "#FFF";
+				document.getElementById("antw2").style.color = "#000";
+				document.getElementById("antw2").readOnly = false;
+			}
+		
+			document.getElementById("timer").style.background = "#FFF";
+			document.getElementById("timer").innerHTML="<p><span>00</span>:<span>"+n(tijd)+"</span></p>";
+			document.getElementById("sbmtButton").innerHTML= "<i class='fa fa-arrow-right' style='font-size:34px'></i>";
+			teLaat = false; 
+			document.forms["somForm"]["antw"].value = ""; 
+			document.getElementById("antw").innerHTML = "";
+			setTimeout(function(){
+			$('#antw2').focus(); 
+			},1);
+		}
+	}
+}
+	
+function callback()
+{
+
+	document.getElementById("sbmtButton").innerHTML= "<i class='fa fa-arrow-right' style='font-size:34px'></i>";
+	document.getElementById("sbmtButton").style.visibility = "visible";
+	klik = true;
+	somNr++;
+	document.getElementById("aGoed").innerHTML = aantalGoed;
+	document.getElementById("aFout").innerHTML = aantalFout;
+	document.getElementById("ago").innerHTML = aantalGoed+ " x "+aantalSommen;
+	document.getElementById("afo").innerHTML = aantalFout+ " x "+aantalSommen;
+	document.getElementById("ag").innerHTML = somNr+ " x "+aantalSommen;
+
+	perc = Math.round(somNr/aantalSommen * 100);
+	document.getElementById("perc").innerHTML = perc+ "%"; 
+	document.getElementById("progr").style.width = perc+"%";
+	
+}
+
+
+function mkAgain()
+{
+
+	somNr = 0;
+	perc = 0;
+	aantalGoed = 0;
+	aantalFout = 0;
+	buttonVolgende = false;
+	gAntwoord = 0;
+	laatstGeklikt = "";
+
+	sommen = shuffle(sommen);
+	//var e = document.getElementById("aantalSec");
+	//tijd = e.options[e.selectedIndex].value;
+	//var e = document.getElementById("aantalSommen");
+	//aantalSommen = e.options[e.selectedIndex].value;
+	
+	meerkeuze = 1;
+	$('#toetsVak').hide();
+	tijd = 0;
+	aantalSommen = 15;
+	console.log("Meerkeuze"+meerkeuze);
+	console.log(tijd);
+	if(tijd==0){
+		$('#timer').hide();	
+	}
+	else{
+		myCounter = new Countdown({  
+		seconds: tijd-1,  // number of seconds to count down
+		onUpdateStatus: function(sec){ aantalSecnu=sec;document.getElementById("timer").innerHTML="<p><span>00</span>:<span>"+n(sec)+"</span></p>";}, // callback for each second
+		onCounterEnd: function(){ teLaat = true; check(); } // final action
+		});
+		
+		document.getElementById("timer").innerHTML="<p><span>00</span>:<span>"+n(tijd)+"</span></p>";
+		myCounter.start();
+		}
+document.getElementById("som").innerHTML = sommen[0].get2+ " x "+sommen[0].get1+ " "   ;
+if(meerkeuze == 1)
+{
+	var res = sommen[somNr].mant.split(",");
+	var antwoordenmk = [];
+	antwoordenmk[0] = res[0];
+	antwoordenmk[1] = res[1];
+	antwoordenmk[2] = res[2];
+	antwoordenmk[3] = sommen[somNr].ant;
+	
+	shuffle(antwoordenmk);
+	$('#sbmtButton').hide();
+	document.getElementById("mka1").innerHTML = antwoordenmk[0].replace(".", ",")+"";
+	document.getElementById("mka2").innerHTML = antwoordenmk[1].replace(".", ",")+"";
+	document.getElementById("mka3").innerHTML = antwoordenmk[2].replace(".", ",")+"";
+	document.getElementById("mka4").innerHTML = antwoordenmk[3].replace(".", ",")+"";
+	
+	$('#toetsVak').hide();
+	$("#mka1").removeClass("goed");
+	$("#mka2").removeClass("goed");
+	$("#mka3").removeClass("goed");
+	$("#mka4").removeClass("goed");
+	$("#mka1").removeClass("fout");
+	$("#mka2").removeClass("fout");
+	$("#mka3").removeClass("fout");
+	$("#mka4").removeClass("fout");
+				
+}
+
+if (mobiel)
+	{
+			//$('html, body').animate({ scrollTop: $("#startBlok").offset().top	}, 1000); 
+			//console.log("time to scroll!");
+			
+		
+		
+			if(document.getElementById("som").innerHTML.length < 10)
+			{
+				document.getElementById("som").style.fontSize = "30px";
+				document.getElementById("antw").style.fontSize = "30px";
+				document.getElementById("vraagVak").style.padding = "20px";
+			}
+			else
+			{
+				document.getElementById("vraagVak").style.padding = "25px";
+			}
+
+		
+		document.getElementById("sbmtButton").style.padding = "15px";
+		if(meerkeuze == 0){
+		
+		}
+		if(meerkeuze == 1)
+		{
+			$( "#toetsVak" ).hide();
+			$( "#meerkeuzeVak" ).show();
+		}
+		else
+		{
+			$( "#toetsVak" ).show();
+			$( "#meerkeuzeVak" ).hide();
+		}		
+		
+		
+		document.getElementById("antw2").style.display = "none";
+		setTimeout(function(){
+					$("#footr").hide();
+				},1);
+	}
+	else
+	{
+	
+		document.getElementById("toetsVak").style.display = "none";
+		document.getElementById("antw2").style.display = "block";
+		$("#sbmtButton").css( { marginBottom : "80px" } );
+		
+		setTimeout(function(){
+					$( "#antw2" ).focus();
+				},1);
+				
+			if(meerkeuze == 1)
+			{
+				$( "#antw2" ).hide();
+				$( "#meerkeuzeVak" ).show();
+			}
+			else
+			{
+				$( "#antw2" ).show();
+				$( "#meerkeuzeVak" ).hide();
+			}		
+				
+	
+	}	
+	$("#eindeBlok").hide();
+	console.log(aantalGoed);
+	console.log(somNr);
+	document.getElementById("aGoed").innerHTML = aantalGoed;
+	document.getElementById("aFout").innerHTML = aantalFout;
+	document.getElementById("ago").innerHTML = aantalGoed+ " x "+aantalSommen;
+	document.getElementById("afo").innerHTML = aantalFout+ " x "+aantalSommen;
+	document.getElementById("ag").innerHTML = somNr+ " x "+aantalSommen;
+
+	perc = Math.round(somNr/aantalSommen * 100);
+	document.getElementById("perc").innerHTML = perc+ "%"; 
+	document.getElementById("progr").style.width = perc+"%";
+
+	document.getElementById("startBlok").style.display = "none";
+	document.getElementById("somBlok").style.display = "block";
+}
+
+function start()
+{
+
+	meerkeuze = 1;
+	$('#toetsVak').hide();
+	tijd = 0;
+	aantalSommen = 15;
+	console.log("Meerkeuze"+meerkeuze);
+	console.log(tijd);
+	if(tijd==0){
+		$('#timer').hide();	
+	}
+	else{
+		myCounter = new Countdown({  
+		seconds: tijd-1,  // number of seconds to count down
+		onUpdateStatus: function(sec){ aantalSecnu=sec;document.getElementById("timer").innerHTML="<p><span>00</span>:<span>"+n(sec)+"</span></p>";}, // callback for each second
+		onCounterEnd: function(){ teLaat = true; check(); } // final action
+	
+
+});
+document.getElementById("timer").innerHTML="<p><span>00</span>:<span>"+n(tijd)+"</span></p>";
+myCounter.start();
+}
+
+		document.getElementById("som").innerHTML = sommen[0].get2+ " x "+sommen[0].get1+ " "   ;
+		
+if(meerkeuze == 1)
+{
+	var res = sommen[somNr].mant.split(",");
+	var antwoordenmk = [];
+	antwoordenmk[0] = res[0];
+	antwoordenmk[1] = res[1];
+	antwoordenmk[2] = res[2];
+	antwoordenmk[3] = sommen[somNr].ant;
+	
+	shuffle(antwoordenmk);
+	$('#sbmtButton').hide();
+	document.getElementById("mka1").innerHTML = antwoordenmk[0].replace(".", ",")+"";
+	document.getElementById("mka2").innerHTML = antwoordenmk[1].replace(".", ",")+"";
+	document.getElementById("mka3").innerHTML = antwoordenmk[2].replace(".", ",")+"";
+	document.getElementById("mka4").innerHTML = antwoordenmk[3].replace(".", ",")+"";
+}
+
+if (mobiel)
+	{
+			//$('html, body').animate({ scrollTop: $("#startBlok").offset().top	}, 1000); 
+			//console.log("time to scroll!");
+			
+		$('#sbmtButton').on('touchstart ', function(){
+    	check();
+		});
+		
+			if(document.getElementById("som").innerHTML.length < 10)
+			{
+				document.getElementById("som").style.fontSize = "30px";
+				document.getElementById("antw").style.fontSize = "30px";
+				document.getElementById("vraagVak").style.padding = "20px";
+			}
+			else
+			{
+				document.getElementById("vraagVak").style.padding = "25px";
+			}
+
+		
+		document.getElementById("sbmtButton").style.padding = "15px";
+		if(meerkeuze == 0){
+		
+		}
+		if(meerkeuze == 1)
+		{
+			$( "#toetsVak" ).hide();
+			$( "#meerkeuzeVak" ).show();
+		}
+		else
+		{
+			$( "#toetsVak" ).show();
+			$( "#meerkeuzeVak" ).hide();
+		}		
+		
+		
+		document.getElementById("antw2").style.display = "none";
+		setTimeout(function(){
+					$("#footr").hide();
+				},1);
+	}
+	else
+	{
+		$('#sbmtButton').on('mousedown ', function(){
+			check();
+		});
+		
+		
+		  $("#antw2").keypress(function(e) {
+
+	   if(e.which == 13) {
+			check();
+        }
+    });
+		document.getElementById("toetsVak").style.display = "none";
+		document.getElementById("antw2").style.display = "block";
+		$("#sbmtButton").css( { marginBottom : "80px" } );
+		
+		setTimeout(function(){
+					$( "#antw2" ).focus();
+				},1);
+				
+			if(meerkeuze == 1)
+			{
+				$( "#antw2" ).hide();
+				$( "#meerkeuzeVak" ).show();
+			}
+			else
+			{
+				$( "#antw2" ).show();
+				$( "#meerkeuzeVak" ).hide();
+			}			
+	
+	}	
+	
+	
+	document.getElementById("aGoed").innerHTML = aantalGoed;
+	document.getElementById("aFout").innerHTML = aantalFout;
+	document.getElementById("ago").innerHTML = aantalGoed+ " x "+aantalSommen;
+	document.getElementById("afo").innerHTML = aantalFout+ " x "+aantalSommen;
+	document.getElementById("ag").innerHTML = somNr+ " x "+aantalSommen;
+
+	perc = Math.round(somNr/aantalSommen * 100);
+	document.getElementById("perc").innerHTML = perc+ "%"; 
+	document.getElementById("progr").style.width = perc+"%";
+	
+	
+document.getElementById("startBlok").style.display = "none";
+document.getElementById("somBlok").style.display = "block";
+	
+}
+$( document ).ready(function() {
+$(function() {
+    FastClick.attach(document.body);
+});
+
+	
+	
+	if (mobiel)
+	{
+			$('#startBtn').on('touchstart ', function(){
+			start();
+		});
+		
+			
+		
+			document.getElementById("mainM").style.padding = "0";
+	}
+	else
+	{
+	
+		setTimeout(function(){
+				$("#footr").show();
+			},1);
+		$('#startBtn').on('mousedown ', function(){
+			start();
+		});
+		
+	}
+	
+
+start();
+
+
+		$('#mka1').on('touchstart click', function(){
+			if(!buttonVolgende){
+			gAntwoord = $('#mka1').html();
+			console.log(gAntwoord);
+			laatstGeklikt = "mka1";
+			check();
+			}
+    	//document.forms["somForm"]["antw"].value += 3;
+		});
+		$('#mka2').on('touchstart click', function(){
+		if(!buttonVolgende){
+			gAntwoord = $('#mka2').html();
+			console.log(gAntwoord);
+			laatstGeklikt = "mka2";
+			check();
+			}
+    	//document.forms["somForm"]["antw"].value += 3;
+		});
+		
+		$('#mka3').on('touchstart click', function(){
+		if(!buttonVolgende){
+			gAntwoord = $('#mka3').html();
+			laatstGeklikt = "mka3";
+			check();
+			}
+    	//document.forms["somForm"]["antw"].value += 3;
+		});
+		
+		$('#mka4').on('touchstart click', function(){
+		if(!buttonVolgende){
+			gAntwoord = $('#mka4').html();
+			laatstGeklikt = "mka4";
+			check();
+			}
+    	//document.forms["somForm"]["antw"].value += 3;
+		});
+		
+		
+		$('#typ1').on('touchstart  ', function(){
+				document.getElementById("antw").innerHTML += 1;
+				//document.forms["somForm"]["antw"].value += 1;
+			
+		});
+
+
+
+$('#typ2').on('touchstart ', function(){
+		document.getElementById("antw").innerHTML += 2;
+    	//document.forms["somForm"]["antw"].value += 2;
+});
+$('#typ3').on('touchstart  ', function(){
+		document.getElementById("antw").innerHTML += 3;
+    	//document.forms["somForm"]["antw"].value += 3;
+		
+	
+});
+$('#typ4').on('touchstart ', function(){
+		document.getElementById("antw").innerHTML += 4;
+    	//document.forms["somForm"]["antw"].value += 4;
+});
+$('#typ5').on('touchstart  ', function(){
+		document.getElementById("antw").innerHTML += 5;
+    	//document.forms["somForm"]["antw"].value += 5;
+	
+});
+$('#typ6').on('touchstart ', function(){
+		document.getElementById("antw").innerHTML += 6;
+    	//document.forms["somForm"]["antw"].value += 6;
+});
+$('#typ7').on('touchstart  ', function(){
+		document.getElementById("antw").innerHTML += 7;
+    	//document.forms["somForm"]["antw"].value += 7;
+	
+});
+$('#typ8').on('touchstart ', function(){
+		document.getElementById("antw").innerHTML += 8;
+    	//document.forms["somForm"]["antw"].value += 8;
+});$('#typ9').on('touchstart  ', function(){
+		document.getElementById("antw").innerHTML += 9;
+    	//document.forms["somForm"]["antw"].value += 9;
+	
+});
+$('#typ0').on('touchstart  ', function(){
+		document.getElementById("antw").innerHTML += 0;
+    	//document.forms["somForm"]["antw"].value += 0;
+	
+});
+
+
+
+$('#erase').on('touchstart ', function(){
+    if(!buttonVolgende)
+	{ 
+		var val =  document.getElementById("antw").innerHTML;
+		document.getElementById("antw").innerHTML= val.substr(0,val.length-1);
+	}
+});
+
+
+});
+
+
+
+</script>	
+
+
+

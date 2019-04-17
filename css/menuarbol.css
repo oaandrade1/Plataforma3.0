@@ -1,0 +1,48 @@
+
+  #menu1 {
+  font-size: 90%;
+  list-style-image: url(/plataforma/imagenes/folder.png);
+  border: 1px solid #006699;
+  width: 200px;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  list-style: inside;
+}
+html > body #menu1{
+  list-style: outside;
+}
+.cAbierta{
+  list-style-type: none;
+  list-style-image: url(/plataforma/imagenes/folder.png);
+}
+.cAbiertaSeleccionada{
+  list-style-type: none;
+  list-style-image: url(/plataforma/imagenes/folder.png);
+}
+.cCerradaSeleccionada{
+  list-style-type: none;
+  list-style-image: url(/plataforma/imagenes/folder.png);
+}
+.cCerrada{
+  list-style-type: none;
+  list-style-image: url(/plataforma/imagenes/folder.png);
+}
+.menuDoc{
+  list-style-type: none;
+  list-style-image: url(/plataforma/imagenes/folder.png);
+}
+.tagApartado, a.tagApartado{
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+.documentoActual{
+  list-style-image: url(/plataforma/imagenes/folder.png);
+}
+
+#menu1 a {
+  color: #006699;
+}
+.documentoActual a{
+  color:#993300;
+}

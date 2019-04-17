@@ -1,0 +1,475 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  box-sizing: border-box;
+  color: inherit;
+  /*font: inherit;*/
+  line-height: inherit;
+  /*
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;*/
+  cursor: defa.ul_comentariot;
+}
+
+#comentar{
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    width: 80px;
+    height: 35px;
+    float: right;
+    cursor: pointer;
+}
+
+#comentar:hover{
+    background: #f8f8f8;
+}
+
+#cm_contenedor{
+  margin-top: 25px;
+}
+
+#comentario_enviar{
+  width: 95%;
+  height: 35px;
+  background: #d6ccbc;
+  border: 2px solid #c3baaa;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 2.3%;
+}
+
+#comentario_enviar:hover{
+  background: #c7baa3;
+  border: 2px solid #b5ac9d;
+}
+
+
+.comentario_contenedor{
+  height: 260px;
+}
+
+#usuario_comentario{
+  height: 33px;
+  width: 97.5%;
+  margin-left: 10px;
+  margin-top: 8px;
+  margin-bottom: -3px;
+  border: 2px solid #ded3c0;
+  border-radius: 5px;
+  padding: 5px;
+  background: #f9f7f3;
+  cursor: auto;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+#comentario_area{
+    margin: 10px;
+    padding: 5px;
+    width: 97.5%;
+    height: 120px;
+    border: 1px solid #ded3c0;
+    border-radius: 5px;
+    cursor: auto;
+    font-size: 14px;
+    font-family: inherit;
+    background: #f9f7f3;
+    resize: none;
+}
+
+.cuerpo_comentario{
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 0px;
+  width: 100%;
+  min-width: 400px;
+  max-width: 95%;
+  /*background: #e5e5e5;*/
+  color: #000;
+  font: 300 14px/20px "Helvetica Neue", sans-serif;
+}
+
+.ul_comentario {
+  padding-left: 80px;
+  list-style: none;
+}
+.ul_comentario li {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.ul_comentario li:not(:first-child) {
+  margin-top: 20px;
+}
+.ul_comentario li:before {
+  content: "";
+  border-width: 10px 10px 10px 0;
+  border-style: solid;
+  border-color: transparent #fff;
+  position: absolute;
+  top: 10px;
+  left: -10px;
+}
+.ul_comentario li header {
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 0;
+}
+.ul_comentario li header h1 {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+}
+.ul_comentario li header h1 a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ul_comentario li header h1.author {
+  color: #9a3;
+  float: left;
+  text-transform: uppercase;  
+}
+.ul_comentario li header h1.author:after {
+  content: "Usuario";
+  margin-left: 10px;
+  padding: 0 4px;
+  background: #9a3;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: normal;
+  text-transform: uppercase;
+  position: absolute;
+}
+.ul_comentario li header h1.author a {
+  color: #9a3;
+}
+
+
+.ul_comentario li header h1.comentario_caja {
+  color: #9a3;
+  float: left;
+}
+.ul_comentario li header h1.comentario_caja:after {
+  content: "Comentario";
+  margin-left: -9px;
+  margin-top: -2px;  
+  padding: 2 10px;
+  background: #c1b092;
+  border-radius: 3px;
+  color: #2f2f2f;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: absolute;
+}
+.ul_comentario li header h1.comentario_caja a {
+  color: #9a3;
+}
+
+
+.ul_comentario li header div {
+  height: 40px;
+  float: right;
+}
+.ul_comentario li header div button {
+  width: 40px;
+  height: 40px;
+  background-size: 120px 80px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+.ul_comentario li header div button:nth-child(1) {
+  background-position: 0 -40px;
+}
+.ul_comentario li header div button:hover:nth-child(1) {
+  background-position: -40px -40px;
+}
+.ul_comentario li p {
+  padding: 20px;
+  width: 98%;
+  white-space: pre-line;
+  overflow-x: hidden;
+  text-align: justify;
+  word-wrap: break-word;
+}
+.ul_comentario li p .reply {
+  color: #9a3;
+}
+.ul_comentario li p a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.ul_comentario li p a:hover {
+  text-decoration: none;
+}
+
+
+.ul_comentario {
+
+    padding-left: 80px;
+    list-style: none;
+
+}
+
+.ul_comentario li {
+
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+}
+
+.ul_comentario li::before {
+    content: "";
+    border-width: 10px 10px 10px 0;
+    border-style: solid;
+    border-color: transparent #fff;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+}
+
+.ul_comentario li::before {
+    content: "";
+    border-width: 10px 10px 10px 0;
+    border-style: solid;
+    border-color: transparent #fff;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+}
+
+.ul_comentario li header {
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 0;
+    height: 40px;
+}
+
+.ul_comentario li header h1 {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    /*float: left;
+    padding: 10px 20px;
+    font-weight: 500;
+    display: inline-block;*/
+}
+
+.ul_comentario li header h1 a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* **************************************************************************************** */
+
+
+.enlace{
+  text-decoration: none;
+}
+
+.submenu{
+  content: "Comentario";
+  /*margin-left: -9px;
+  margin-top: -2px;  */
+  padding: 9px 15px;
+  margin-left: 12px;
+  margin-top: 6px;
+  background: #c1b092;
+  border-radius: 3px;
+  color: #2f2f2f;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.submenu:hover{
+  background: #b99a73;
+}
+
+.menu_contenedor{
+  height: 50px;
+}
+
+.menu_recursos {
+  padding-left: 80px;
+  list-style: none;
+}
+.menu_recursos li {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.menu_recursos li:not(:first-child) {
+  margin-top: 20px;
+}
+.menu_recursos li:before {
+  border-width: 10px 10px 10px 0;
+  border-style: solid;
+  border-color: transparent #fff;
+  position: absolute;
+  top: 10px;
+  left: -10px;
+}
+.menu_recursos li header {
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 0;
+}
+.menu_recursos li header h1 {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+}
+.menu_recursos li header h1 a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu_recursos li header h1.author {
+  color: #9a3;
+  float: left;
+  text-transform: uppercase;  
+}
+.menu_recursos li header h1.author:after {
+  content: "Usuario";
+  margin-left: 10px;
+  padding: 0 4px;
+  background: #9a3;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: normal;
+  text-transform: uppercase;
+  position: absolute;
+}
+.menu_recursos li header h1.author a {
+  color: #9a3;
+}
+
+
+.menu_recursos li header h1.comentario_caja {
+  color: #9a3;
+  float: left;
+}
+.menu_recursos li header h1.comentario_caja:after {
+  content: "Comentario";
+  margin-left: -9px;
+  margin-top: -2px;  
+  padding: 2 10px;
+  background: #c1b092;
+  border-radius: 3px;
+  color: #2f2f2f;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: absolute;
+}
+.menu_recursos li header h1.comentario_caja a {
+  color: #9a3;
+}
+
+
+.menu_recursos li header div {
+  height: 40px;
+  float: right;
+}
+.menu_recursos li header div button {
+  width: 40px;
+  height: 40px;
+  background-size: 120px 80px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+.menu_recursos li header div button:nth-child(1) {
+  background-position: 0 -40px;
+}
+.menu_recursos li header div button:hover:nth-child(1) {
+  background-position: -40px -40px;
+}
+.menu_recursos li p {
+  padding: 20px;
+  width: 98%;
+  white-space: pre-line;
+  overflow-x: hidden;
+  text-align: justify;
+  word-wrap: break-word;
+}
+.menu_recursos li p .reply {
+  color: #9a3;
+}
+.menu_recursos li p a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.menu_recursos li p a:hover {
+  text-decoration: none;
+}
+
+
+.menu_recursos {
+  padding: 0;
+  list-style: none;
+
+}
+
+.menu_recursos li {
+
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.15);
+    position: relative;
+
+}
+
+
+.menu_recursos li header {
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 0;
+    height: 40px;
+}
+
+.menu_recursos li header h1 {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    /*float: left;
+    padding: 10px 20px;
+    font-weight: 500;
+    display: inline-block;*/
+}
+
+.menu_recursos li header h1 a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 802px){
+  .menu_contenedor{
+    height: 94px;
+  }
+}
+
+@media (max-width: 451px){
+  .menu_contenedor{
+    height: 140px;
+  }
+}
+

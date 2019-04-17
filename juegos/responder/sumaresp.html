@@ -1,0 +1,123 @@
+<html lang="es-ES">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas de Matemáticas, Aprende a Resolver Problemas de Matemáticas con elabueloeduca</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/plataforma/juegos/responder/elabueloeduca_mas.css" rel="stylesheet" type="text/css">
+    <script async="" defer="" src="/plataforma/juegos/responder/elabueloeduca_mas.js"></script>
+    <script async="" src="/plataforma/juegos/responder/matematicas_mas.js" charset="utf-8"></script>
+    </head>
+<body>
+
+<div class="container">
+    <nav class="navbar navbar-default lgbg">
+      <div class="container-fluid" id="cabecera">
+      </div>
+    </nav>
+<div id="contenedorTotal">
+<div id="contenedor">
+<style>
+.ejem{
+    width: 100%;
+    text-align: justify;
+    padding: 15px;
+}
+#panelAyudaLocal{margin:0 auto;float:center;padding:10px;
+  border:1px solid #80A93E;
+  width:180px;vertical-align:middle;background-color:#F5ECB9;
+  display:none;visibility:hidden;}
+
+.seccionselected{padding-left:2px;background-color:#f5e694;}
+
+.enunciado{
+  width:100%;margin 0 auto;
+  /*border:1px gray;border-width:thin medium medium thin;border-style:outset inset inset outset;*/
+  background-color:#edeff4;padding:15px;
+  margin: 0 auto;margin-bottom: 5px;
+  border: 1px solid #3399cc;
+  border-radius: 3px;
+}
+</style>
+
+<script language="javascript">
+function nuevoJuego(){
+    document.frmJuego.submit();
+}
+function pintarAyuda_(texto, error) {
+    var cls='panel-success';
+    if (error)
+        cls='panel-danger';
+    texto='<div class="panel ' + cls + '">' +
+    '<div class="panel-heading">' + texto + '</div>' +
+    '</div>';
+    
+    obj = document.getElementById("panelAyudaLocal2");
+    if (obj!=null) {
+        obj.style.display='block';
+        obj.style.visibility='visible';
+        obj.innerHTML=texto;
+    }
+}
+
+function v(){
+    var obj=document.getElementById("rdo");
+    if (obj!=null){
+        var correcto=obj.value;
+
+        var valor=document.getElementById("final").value;
+        console.log("valor introducido:" + valor + ", correcto:"+ correcto);
+        if(valor==correcto){
+            // alert("correcto!");
+            pintarAyuda_("Fenómeno sigue así!!!", 0)
+            //AparecerBien();
+        } else {
+            // alert("fallo!");
+            pintarAyuda_("Upss tienes que repasar un poquito!!!", 1)
+            // AparecerAyuda();
+        }
+
+        var obj1=document.getElementById("solucion");
+        if (obj1!=null){
+            obj1.className="ejem center visible";
+        }
+
+        var obj2=document.getElementById("panelAyuda");
+        if (obj2!=null){
+            obj2.style.display = 'block';
+            obj2.style.visibility = 'visible';
+        }
+    }
+}
+
+function tipo(valor){
+    document.getElementById("tipo").value=valor;
+    document.frmJuego.submit();
+}
+</script>
+
+<div id="contenido">
+    <div id="panelMostrar"></div>
+<div id="panelInfo" class="columna cabini">
+    <form name="frmJuego" action="/plataforma/juegos/responder/sumaresp.html" method="POST">
+      <input type="hidden" id="tipo" name="tipo" value="1">
+    </form> 
+<b>(1) Lee el enunciado atentamente y resuelve el Problema:</b><br><br><br><br><div class="enunciado">Cada año Margarita se compra <b>16</b> libros y Juan otros <b>6</b> libros. ¿Cuántos libros se compran entre los dos en un año?</div>
+<br>
+  <div class="form-inline center" onsubmit="javascript:v(22)">
+  <label class="mr-sm-2" for="inlineFormCustomSelect">Solución:</label>
+    <input id="final" type="text" size="4" maxlength="4" class="form-control" placeholder="">
+    <button type="submit" class="btn btn-primary" onclick="javascript:v(22)">Comprobar</button>
+    </div>
+  <br><div id="panelAyudaLocal2"></div><div class="invisible" id="solucion"><h4>Solución:</h4><br>A los <b>16</b> libros que compra Margarita le sumamos los <b>6</b>  libros que compra Juan: <br><br><b>Resultado: 16 + 6 = <b>22 libros</b><input type="hidden" id="rdo" value="22"><br><br>
+  <button type="button" class="btn btn-primary btn-block" onclick="javascript:nuevoJuego();">Jugar otra vez</button><br></b>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</html>

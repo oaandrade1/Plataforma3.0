@@ -1,0 +1,51 @@
+<title>Modificar</title>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#txt-content').Editor();
+
+		$('#btn-enviar').click(function(e){
+			e.preventDefault();
+			/*$('#txt-content').text($('#txt-content').Editor('getText'));*/
+			var contenido = $('#txt-content').Editor('getText');
+			document.getElementById("contenedor").innerHTML = contenido;				
+		});
+
+		let html = document.getElementById('curso_contenido').value;
+		//let html = "Bienvenido 35";
+      	let contenido = "<body>"+html+"</body>";
+      	$('#txt-content').Editor('setText',[contenido]);
+
+	});	
+</script>
+
+<script>
+	function publicar_espera(){
+		var contenido = $('#txt-content').Editor('getText');
+		document.getElementById("curso_contenido").value = contenido;
+
+		//var us = document.getElementById("usuario").innerHTML;
+		//document.getElementById("usuario_sesion").value = us;
+	}
+</script>
+
+<div class="container">
+	<h2>Editar Documentos</h2>
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="form-group">
+				<textarea id="txt-content" name="txt-content"></textarea>
+			</div>
+		</div>
+	</div>
+	<input type="submit" class="btn btn-default" id="btn-enviar" value="Vista Previa">
+	<input type="submit" class="btn btn-default"  id="editar" name="editar" onclick="publicar_espera()" value="Guardar">
+	<div class="row">
+		<div class="col-sm-8">
+			<div id="contenedor" style="width: 100%; border:2px solid #d8d8d8; padding:20px;margin-top:20px;">
+			</div>
+		</div>
+	</div>
+
+</div><br>
+

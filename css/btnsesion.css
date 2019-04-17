@@ -1,0 +1,22 @@
+
+.cerrarsesion {
+ 	font-size: 1em;
+	height: 3.5em;
+	width: 8em;
+	background-color:#036f7c; 
+	color:white;
+	font-weight: bold;
+	font-family: Arial;
+	border-radius: 47px 47px 47px 47px;
+-moz-border-radius: 47px 47px 47px 47px;
+-webkit-border-radius: 47px 47px 47px 47px;
+border: 0px solid #000000; 
+ 
+}
+
+.cerrarsesion:hover{
+background: #f25110;
+ color: white;
+
+ }
+

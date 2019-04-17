@@ -1,0 +1,67 @@
+<html lang="es" lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Juegos para aprender y repasar las Divisiones</title>
+<link href="/plataforma/juegos/responder/elabueloeduca_aprender_jugando_mas.css" rel="stylesheet" type="text/css">
+<script language="javascript" src="/plataforma/juegos/responder/elabueloeduca_mas.js"></script>
+<style>
+#lg{width:146px;height:90px;z-index:900;background:url(../../../elabueloeduca_img/lg.jpg) left no-repeat;float:left;}
+#txtpubli{float:left;width:12px;height:88px;z-index:900;}
+/*reemplazamos el ct*/
+.contenedorTotal{top:135px;}
+</style>
+
+<body onload="">
+
+<div id="contenedorTotal"><style>.seccionselected{padding-left:2px;background-color:#f5e694;}</style>
+<script language="javascript">
+function nuevoJuego(){
+comprobarFin();
+}
+function comprobarFin(){
+if (!completado){
+if (eval(confirm(strMensajeAbandonar))) {document.frmJuego.submit();}
+}else{document.frmJuego.submit();}
+}
+function mostrarJuego(numjuego,tipojuego,desde,hasta){
+document.getElementById("numjuego").value=numjuego;
+document.getElementById("tipojuego").value=tipojuego;
+document.getElementById("desde").value=desde;
+document.getElementById("hasta").value=hasta;
+
+if (!completado){
+if (eval(confirm(strMensajeAbandonar))) {document.frmJuego.submit();}
+}else{document.frmJuego.submit();}
+}
+function cvl(opcion){
+st="Calcula el resultado de las siguientes Divisiones:";
+sp="12 : 6 = |24 : 8 = |72 : 9 = |54 : 9 = |8 : 4 = |32 : 4 = |12 : 6 = |21 : 3 = |45 : 9 = |49 : 7 = |10 : 5 = |63 : 9 = |15 : 3 = |12 : 3 = |16 : 4 = |48 : 6 = ";
+sr="2|3|8|6|2|8|2|7|5|7|2|7|5|4|4|8";
+}
+function chvalor(obj){
+  selectOperac(obj.value);
+}
+function selectOperac(numoper){
+document.getElementById("numoper").value=numoper;
+document.getElementById("tipojuego").value="R";
+document.getElementById("accion").value='1';
+if (!completado){
+if (eval(confirm(strMensajeAbandonar))) {document.frmJuego.submit();}
+}else{document.frmJuego.submit();}
+}
+</script>
+<div id="contenedor" class="contenedor">
+<div id="contenido" class="contenido">
+<br><div id="panelMostrar" style="display: block;"><div id="panelAciertos" class="columna"><table border="0" cellspacing="5" cellpadding="5" width="100%" id="tablaAciertos"><tbody><tr class="bold"><td>&nbsp;</td><td>Intentos: <label id="intentos">0</label></td><td class="classAci">Aciertos: <label id="aciertos">0</label></td><td class="classFa">Fallos: <label id="fallos">0</label></td><td>&nbsp;</td></tr><tr><td colspan="12"><b><div id="tituloPagina">Calcula el resultado de las siguientes Divisiones:</div></b></td></tr></tbody></table></div><div id="divRespuestas"></div><div id="tbTotal2"><table id="tablaPreguntas" align="center" border="0"><tbody><tr><td class="nr"><label id="lbl_palabra1" onclick="javascript:verMapa('8 : 4 = ','txt_palabra0')">8 : 4 = &nbsp;</label></td><td class="nr"><input type="text" id="txt_palabra0" tabindex="1" value="" onchange="javascript:comprobar_nueva(0)" size="9" class="classCaja" onfocus="javascript:comprobarFoco('txt_palabra0','0')">&nbsp;<img id="txt_img0" src="http://www.elabueloeduca.com/elabueloeduca_img/nada.gif" onclick="javascript:resolver('txt_palabra0','2')"></td></tr><tr><td class="nr"><label id="lbl_palabra1" onclick="javascript:verMapa('21 : 3 = ','txt_palabra1')">21 : 3 = &nbsp;</label></td><td class="nr"><input type="text" id="txt_palabra1" tabindex="2" value="" onchange="javascript:comprobar_nueva(1)" size="9" class="classCaja" onfocus="javascript:comprobarFoco('txt_palabra1','1')">&nbsp;<img id="txt_img1" src="http://www.elabueloeduca.com/elabueloeduca_img/nada.gif" onclick="javascript:resolver('txt_palabra1','7')"></td></tr><tr><td class="nr"><label id="lbl_palabra1" onclick="javascript:verMapa('12 : 6 = ','txt_palabra2')">12 : 6 = &nbsp;</label></td><td class="nr"><input type="text" id="txt_palabra2" tabindex="3" value="" onchange="javascript:comprobar_nueva(2)" size="9" class="classCaja" onfocus="javascript:comprobarFoco('txt_palabra2','2')">&nbsp;<img id="txt_img2" src="http://www.elabueloeduca.com/elabueloeduca_img/nada.gif" onclick="javascript:resolver('txt_palabra2','2')"></td></tr><tr><td class="nr"><label id="lbl_palabra1" onclick="javascript:verMapa('15 : 3 = ','txt_palabra3')">15 : 3 = &nbsp;</label></td><td class="nr"><input type="text" id="txt_palabra3" tabindex="4" value="" onchange="javascript:comprobar_nueva(3)" size="9" class="classCaja" onfocus="javascript:comprobarFoco('txt_palabra3','3')">&nbsp;<img id="txt_img3" src="http://www.elabueloeduca.com/elabueloeduca_img/nada.gif" onclick="javascript:resolver('txt_palabra3','5')"></td></tr><tr><td class="nr"><label id="lbl_palabra1" onclick="javascript:verMapa('63 : 9 = ','txt_palabra4')">63 : 9 = &nbsp;</label></td><td class="nr"><input type="text" id="txt_palabra4" tabindex="5" value="" onchange="javascript:comprobar_nueva(4)" size="9" class="classCaja" onfocus="javascript:comprobarFoco('txt_palabra4','4')">&nbsp;<img id="txt_img4" src="http://www.elabueloeduca.com/elabueloeduca_img/nada.gif" onclick="javascript:resolver('txt_palabra4','7')"></td></tr><tr><td class="nr"><label id="lbl_palabra1" onclick="javascript:verMapa('72 : 9 = ','txt_palabra5')">72 : 9 = &nbsp;</label></td><td class="nr"><input type="text" id="txt_palabra5" tabindex="6" value="" onchange="javascript:comprobar_nueva(5)" size="9" class="classCaja" onfocus="javascript:comprobarFoco('txt_palabra5','5')">&nbsp;<img id="txt_img5" src="http://www.elabueloeduca.com/elabueloeduca_img/nada.gif" onclick="javascript:resolver('txt_palabra5','8')"></td></tr><tr><td class="nr"><label id="lbl_palabra1" onclick="javascript:verMapa('45 : 9 = ','txt_palabra6')">45 : 9 = &nbsp;</label></td><td class="nr"><input type="text" id="txt_palabra6" tabindex="7" value="" onchange="javascript:comprobar_nueva(6)" size="9" class="classCaja" onfocus="javascript:comprobarFoco('txt_palabra6','6')">&nbsp;<img id="txt_img6" src="http://www.elabueloeduca.com/elabueloeduca_img/nada.gif" onclick="javascript:resolver('txt_palabra6','5')"></td></tr><tr><td class="nr"><label id="lbl_palabra1" onclick="javascript:verMapa('16 : 4 = ','txt_palabra7')">16 : 4 = &nbsp;</label></td><td class="nr"><input type="text" id="txt_palabra7" tabindex="8" value="" onchange="javascript:comprobar_nueva(7)" size="9" class="classCaja" onfocus="javascript:comprobarFoco('txt_palabra7','7')">&nbsp;<img id="txt_img7" src="http://www.elabueloeduca.com/elabueloeduca_img/nada.gif" onclick="javascript:resolver('txt_palabra7','4')"></td></tr><tr><td class="nr"><label id="lbl_palabra1" onclick="javascript:verMapa('12 : 3 = ','txt_palabra8')">12 : 3 = &nbsp;</label></td><td class="nr"><input type="text" id="txt_palabra8" tabindex="9" value="" onchange="javascript:comprobar_nueva(8)" size="9" class="classCaja" onfocus="javascript:comprobarFoco('txt_palabra8','8')">&nbsp;<img id="txt_img8" src="http://www.elabueloeduca.com/elabueloeduca_img/nada.gif" onclick="javascript:resolver('txt_palabra8','4')"></td></tr><tr><td class="nr"><label id="lbl_palabra1" onclick="javascript:verMapa('48 : 6 = ','txt_palabra9')">48 : 6 = &nbsp;</label></td><td class="nr"><input type="text" id="txt_palabra9" tabindex="10" value="" onchange="javascript:comprobar_nueva(9)" size="9" class="classCaja" onfocus="javascript:comprobarFoco('txt_palabra9','9')">&nbsp;<img id="txt_img9" src="http://www.elabueloeduca.com/elabueloeduca_img/nada.gif" onclick="javascript:resolver('txt_palabra9','8')"></td></tr><tr><td class="nr"><label id="lbl_palabra1" onclick="javascript:verMapa('49 : 7 = ','txt_palabra10')">49 : 7 = &nbsp;</label></td><td class="nr"><input type="text" id="txt_palabra10" tabindex="11" value="" onchange="javascript:comprobar_nueva(10)" size="9" class="classCaja" onfocus="javascript:comprobarFoco('txt_palabra10','10')">&nbsp;<img id="txt_img10" src="http://www.elabueloeduca.com/elabueloeduca_img/nada.gif" onclick="javascript:resolver('txt_palabra10','7')"></td></tr><tr><td class="nr"><label id="lbl_palabra1" onclick="javascript:verMapa('12 : 6 = ','txt_palabra11')">12 : 6 = &nbsp;</label></td><td class="nr"><input type="text" id="txt_palabra11" tabindex="12" value="" onchange="javascript:comprobar_nueva(11)" size="9" class="classCaja" onfocus="javascript:comprobarFoco('txt_palabra11','11')">&nbsp;<img id="txt_img11" src="http://www.elabueloeduca.com/elabueloeduca_img/nada.gif" onclick="javascript:resolver('txt_palabra11','2')"></td></tr><tr><td class="nr"><label id="lbl_palabra1" onclick="javascript:verMapa('24 : 8 = ','txt_palabra12')">24 : 8 = &nbsp;</label></td><td class="nr"><input type="text" id="txt_palabra12" tabindex="13" value="" onchange="javascript:comprobar_nueva(12)" size="9" class="classCaja" onfocus="javascript:comprobarFoco('txt_palabra12','12')">&nbsp;<img id="txt_img12" src="http://www.elabueloeduca.com/elabueloeduca_img/nada.gif" onclick="javascript:resolver('txt_palabra12','3')"></td></tr><tr><td class="nr"><label id="lbl_palabra1" onclick="javascript:verMapa('32 : 4 = ','txt_palabra13')">32 : 4 = &nbsp;</label></td><td class="nr"><input type="text" id="txt_palabra13" tabindex="14" value="" onchange="javascript:comprobar_nueva(13)" size="9" class="classCaja" onfocus="javascript:comprobarFoco('txt_palabra13','13')">&nbsp;<img id="txt_img13" src="http://www.elabueloeduca.com/elabueloeduca_img/nada.gif" onclick="javascript:resolver('txt_palabra13','8')"></td></tr><tr><td class="nr"><label id="lbl_palabra1" onclick="javascript:verMapa('54 : 9 = ','txt_palabra14')">54 : 9 = &nbsp;</label></td><td class="nr"><input type="text" id="txt_palabra14" tabindex="15" value="" onchange="javascript:comprobar_nueva(14)" size="9" class="classCaja" onfocus="javascript:comprobarFoco('txt_palabra14','14')">&nbsp;<img id="txt_img14" src="http://www.elabueloeduca.com/elabueloeduca_img/nada.gif" onclick="javascript:resolver('txt_palabra14','6')"></td></tr><tr><td class="nr"><label id="lbl_palabra1" onclick="javascript:verMapa('10 : 5 = ','txt_palabra15')">10 : 5 = &nbsp;</label></td><td class="nr"><input type="text" id="txt_palabra15" tabindex="16" value="" onchange="javascript:comprobar_nueva(15)" size="9" class="classCaja" onfocus="javascript:comprobarFoco('txt_palabra15','15')">&nbsp;<img id="txt_img15" src="http://www.elabueloeduca.com/elabueloeduca_img/nada.gif" onclick="javascript:resolver('txt_palabra15','2')"></td></tr><tr><td colspan="2">&nbsp;</td></tr><tr><td></td><td></td></tr></tbody></table></div></div><div id="panelInfo" class="columna cabini" style="display: none;">
+</div><!-- panelinfo -->
+</div><!-- contenido -->
+</div><!-- contenedor -->
+</div><!-- contenedortotal -->
+<script language="javascript">
+mostrarEjercicio('JM1');</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7425803-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body></html>

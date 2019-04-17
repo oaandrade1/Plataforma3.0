@@ -1,0 +1,58 @@
+
+.botones1{
+	font-size: 1em;
+	height: 1.6em;
+	width: 8em;
+	background-color:#f25110; 
+	color:white;
+	font-weight: bold;
+	font-family: Arial;
+	border-radius: 47px 47px 47px 47px;
+-moz-border-radius: 47px 47px 47px 47px;
+-webkit-border-radius: 47px 47px 47px 47px;
+border: 0px solid #000000;
+}
+
+.botones1:hover{
+background: #05a3b7;
+ color: white;
+ box-shadow: inset 1 0 0 3px #3a7999;
+ }
+
+.botones2{
+	font-size: 1em;
+	height: 1.6em;
+	width: 8em;
+	background-color:#07b0c6; 
+	color:white;
+	font-weight: bold;
+	font-family: Arial;
+	border-radius: 47px 47px 47px 47px;
+-moz-border-radius: 47px 47px 47px 47px;
+-webkit-border-radius: 47px 47px 47px 47px;
+border: 0px solid #000000;
+}
+
+.centrar{
+    text-align:center;
+  margin: 0 auto;
+  
+
+}
+
+	.boton_personalizado{
+    text-decoration: none;
+    padding: 0.6em;
+    font-weight: bold;
+	font-family: Arial;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #f25110;
+    border-radius: 47px 47px 47px 47px;
+  
+    border: 1px solid #ffffff;
+  }
+  .boton_personalizado:hover{
+    color: #ffffff;
+    background-color: #05a3b7;
+  }

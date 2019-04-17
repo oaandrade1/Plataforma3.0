@@ -1,0 +1,228 @@
+
+a{
+  text-decoration: none;
+}
+
+.cerrar_sesion{
+  display: inline-block;
+  background: #0F3F69;
+  color: #FFF;
+  border-radius: 3px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.cerrar_sesion:hover{
+  background: #1F507B;
+}
+
+.home-box-fifth {
+  float: left;
+  width: 24%;
+  margin: 0 0.5%;
+  background: #FFF;
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  min-height: 460px;
+  padding: 0 0 0px 0;
+  position: relative;
+}
+
+.home-box-fifth-wrap {
+  margin: 50px auto;
+}
+
+.home-box-fifth-top-bg {
+  height: 146px;
+  background: #CCC;
+  padding-top: 24px;
+}
+
+.icon-circle:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5), 0px 0px 30px rgba(0, 0, 0, 0.6);
+}
+
+.icon-circle {
+  height: 91px;
+  width: 91px;
+  border-radius: 100%;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  margin: 0 auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.icon-dark-blue:hover {
+  background: rgba(0, 43, 81, 0.72);
+}
+
+.icon-dark-blue,
+.icon-002B51 {
+  background: #002B51;
+}
+
+.icon-light-blue {
+  background: #7ab3d1;
+}
+
+.icon-hands {
+  height: 81px;
+  width: 81px;
+  background: url("https://iconizer.net/files/IconFinder_Pixel/orig/education_course_training.png") center no-repeat;
+}
+
+.icon-paper {
+  height: 81px;
+  width: 81px;
+  background: url("https://img.icons8.com/office/45/000000/courses.png") center no-repeat;
+}
+
+.icon-case {
+  height: 81px;
+  width: 81px;
+  background: url("https://img.icons8.com/dusk/55/000000/add.png") center no-repeat;
+}
+
+.icon-logo {
+  height: 81px;
+  width: 81px;
+  background: url("https://img.icons8.com/office/55/000000/user-group-man-man.png") center no-repeat;
+}
+
+
+.bg-one {
+  background: #444;
+}
+
+.bg-two {
+  background: #444;
+}
+
+.bg-three {
+  background: #444;
+}
+
+.bg-four {
+  background: #444;
+}
+
+.bg-five {
+  background: #444;
+}
+
+.bg-six {
+  background: #444;
+  opacity: 0.2
+}
+
+.hbf-lower-content {
+  text-align: center;
+}
+
+.hbf-title {
+  color: #002c51;
+  text-transform: uppercase;
+  margin: 30px 0;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.hbf-lblue .hbf-title {
+  color: #7ab3d1;
+}
+
+.hbf-text {
+  color: #81848b;
+  padding: 16px 20px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.hbf-more a {
+  display: inline-block;
+  background: #002B51;
+  color: #FFF;
+  border-radius: 3px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.hbf-lblue .hbf-more a {
+  background: #7ab3d1;
+}
+
+.hbf-more {
+  position: absolute;
+  bottom: 50px;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+}
+
+.hbf-3 .icon-3-bg {
+  background: #00ac9f;
+}
+
+.hbf-3 .hbf-title {
+  color: #00ac9f;
+}
+
+.hbf-3 .hbf-more a {
+  background: #00ac9f;
+}
+
+.hbf-4 .icon-4-bg {
+  background: #7eabae;
+}
+
+.hbf-4 .hbf-title {
+  color: #7eabae;
+}
+
+.hbf-4 .hbf-more a {
+  background: #7eabae;
+}
+
+.hbf-5 .icon-5-bg {
+  background: #306fb7;
+}
+
+.hbf-5 .hbf-title {
+  color: #306fb7;
+}
+
+.hbf-5 .hbf-more a {
+  background: #306fb7;
+}
+
+.large-title {
+  color: #00ac9f;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+.hbf-text i {
+  line-height: 1.8;
+}
+
+.hbf-more a:hover {
+  opacity: 0.9;
+}
+
+@media (max-width:860px) {
+  .home-box-fifth {
+    float: none;
+    width: 222px;
+    max-width: 222px;
+    margin-bottom: 10px;
+  }
+  .home-box-fifth-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

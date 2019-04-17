@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Podcast</title>
+</head>
+
+<body>
+		<audio controls>												
+			  <source src="horse.ogg" type="audio/ogg">
+			  <source src="/plataforma/musica.mp3" type="audio/mpeg">
+		</audio>
+<br>
+		<input type="button" value="Ver transcripción" onclick="contenido(1)">
+    	
+    	<div id="contenedor"></div>
+   
+    	<script>
+	function contenido(num){
+		$(function (){
+			var panel = "";
+			switch(num){
+				case 1:
+					panel = "podcast_letras.html";
+				break;
+				
+    			}
+			$("#contenedor").load(panel);
+		});
+
+	}
+</script>
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script src="admin/B/Script/Script.js"></script>
+
+
+</body>
+</html>

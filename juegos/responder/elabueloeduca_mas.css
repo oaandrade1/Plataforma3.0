@@ -1,0 +1,324 @@
+{margin:0;padding:0;}
+html{min-height:100%;margin-bottom:1px}
+body{Helvetica,sans-serif;}
+/*input{font-size:.9em;}*/
+img, embed, object, video{max-width:100%;}
+html,body,div{margin:0;padding:0;}
+hr.lin{height:0.1em;border:1px inset #3c3c3c;background:#3c3c3c;}
+*{box-sizing:border-box;margin-top:0;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+html, body, div, #panelAciertos{margin:0;padding:0;}
+a, li{text-decoration:none;}
+li{list-style:none;}
+
+ul#l_mate, ul#l_lengua, ul#l_geo, ul#l_ingles {padding-left: 0px;}
+#l_mate li, #l_lengua li, #l_geo li, #l_ingles li{padding-left:5px;padding-bottom:5px;}
+#l_mate li a, #l_lengua li a, #l_geo li a, #l_ingles li a{width:auto;font-weight:bold;padding-right:5px;display:block;color:#fff;padding-left:5px;}
+#l_mate li a{background:#3399CC;}
+#l_lengua li a{background:#CC0033;}
+#l_geo li a{background:#339933;}
+#l_ingles li a{background:#9F19BA;}
+#l_mate li a:after{content:":";}
+.navbar-collapse{margin-top:2px;}
+.icon{display:none;}
+#barnav{border-radius:5px;}
+#cabecera, #contenedorTotal{background:#fff;width:960px;}
+#contenedorTotal{width:100%;margin:0 auto;background:#fefefe;}
+#contenedorTotal, #cabecera, .menusup{width:95%;}
+#contenedor{width:75%;float:left;margin-left:5px;}
+#menu, #divPubliV, #divPubliVGA{width:180px;}
+#divPubliV, #divPubliVGA{text-align:center;float:right;padding-bottom:15px}
+#menu{float:left;}
+#contenido{width:75%;margin:0 auto;float:right;}
+#divPubliH{width:100%;clear:both;}
+#menu span{width:100%;display:block;}
+#menu ul{display:block;width:80%;width:100%;margin:0 auto;}
+#menu li{padding:0 2px;display:block;width:100%;}
+.mIzq{padding:0;text-align:left;float:center;clear:both;width:80%;border:1px solid green;}
+#mnaj{float:right;display:inline-block;width:100%;}
+#lnkfb{padding-left:2px;float:left;}
+#tituloPagina{text-align:center;font-weight:bold;font-size:1em;line-height:2em;}
+.bold{font-weight:bold;}
+#contenedorTotal{margin:0 auto;padding-top:0px;}
+#cabecera{height:50px;margin:0 auto;padding-top:2px;position:relative;text-decoration:none;z-index:501;}
+.contenedor{float:left;}
+.divMenu{display:table-cell;float:left;height:100%;width:180px;}
+#menu,.mIzq{float:left;width:180px;z-index:0;}
+#mnuAyuda{display:block;}
+.fieldsetMenu{line-height:1.5em;padding:0 5px 5px 5px;}
+#pRectMEInt,#bnRect{margin:5px auto;width:320px;}
+.ndivp{display:table;width:520px;margin:0 auto;}
+#pRectMEInt{float:left;width:336px;}
+#pRectGA{text-align:center;width:100%;margin:0 auto;height:300px;}
+#pRectGAInt{float:left;width:336px;}
+#pRectG{width:336px;margin:0 auto;margin-bottom:10px;}
+.fdere{float:right;width:155px;text-align:left;}
+.fpie{float:left;clear:both;}
+.tRegla{display:block;background-color:#FCC3C5;border:1px solid #CC0033;border-radius:2px;font-weight:bold;padding-left:2px;width:100%;}
+.tejemlen{font-weight:bold;background:#fff;padding:2px;color:#CC0033;}
+.bloqueInfolengua{border:1px solid #FCC3C5;}
+#menu a{display:block;min-height:1.5em;line-height:1.5em;padding-left:2px;width:100%;}
+.divAyuda{background-color:#F5ECB9;border:1px solid #80A93E;float:right;padding:10px;width:200px;z-index:200;}
+.divAyuda1{background:#F5ECB9;border:1px solid #80A93E;border-radius:4px;margin:0 auto;padding-top:.2em;text-align:center;width:93%;}
+.nayuMate, .nayuLengua, .nayuGeo, .nayuIngles{
+	color:#fff;border:2px solid #ff9900;border-radius:4px;margin:0 auto;text-align:center;padding-top:.2em;width:100%;height:70px;background:url('../elabueloeduca_img/logos/lgcircle.png');background-repeat:no-repeat;background-position:5px 5px;background-size:60px 60px;background-color:#0071BD;
+}
+.nayuLengua{background-color:#CC0033;}
+.vlinkNL a{color:#CC0033;}
+.nayuGeo{background-color:#339933;}
+.vlinkNG a{color:#339933;}
+.nayuIngles{background-color:#9F19BA;}
+.vlinkNI a{color:#9F19BA;}
+.nayuMate a, .nayuLengua a, .nayuGeo a, .nayuIngles a{display:block;color:#fff;line-height:60px;}
+.vizq, .vdch{padding:5px;background-color:#fff;}
+dt{margin-top:.5em;font-weight:bold;}
+.ayLecc{background:#F5ECB9;border:1px solid #80A93E;background-image:url(../elabueloeduca_img/ayuda.png);background-repeat:no-repeat;background-position:50% 2px;border-radius:4px;padding-top:35px;margin:0 auto;text-align:center;width:93%;}
+.vlink{display:table;width:100%;}
+.vizq,.vdch{display:table-cell;color:navy;width:48%;}
+.vizq{float:left;}
+.vdch{float:right;text-align:right;}
+#panelAyuda{top:202px;border:1px solid green;position:absolute;background-color:#F5ECB9;color:#339933;padding:2px;border-top-left-radius:5px;border-bottom-right-radius:5px;width:180px;}
+#panelAyuda__{border:1px solid green;background-color:#F5ECB9;left:780px;padding:10px;color:#339933;position:relative;text-align:center;top:30%;border-top-left-radius:5px;border-bottom-right-radius:5px;width:180px;}
+#divRespuestas{background-color:#ffd796;position:absolute;visibility:hidden;z-index:90;padding:2px;border-radius:5px;border: 2px solid #faa13f;top:90px;}
+#divRespuestas table{background:#FFD796;}
+h6.closeHLP{font-weight:bold;}
+.closeHLP{cursor:pointer;color:#0071BD;width:100%;}
+#divMapaAyuda{z-index:1201;padding:10px;position:absolute;border:1px solid #80A93E;margin:0 auto;background-color:#CCFFCC;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;-moz-box-shadow:10px 10px 20px #000;-webkit-box-shadow:10px 10px 20px #000;box-shadow:5px 5px 20px #ccc;behavior:url(ie-css3.htc);width:600px;top:100px;left:50%;visibility:hidden;margin-left:-300px;text-align:center;}
+#divMapaAyuda a{display:block;width:520px;margin:0 auto;text-align:right;color:#339933;font-weight:bold;background-color:transparent;}
+#imgmapa{width:520px;height:380px;}
+#menu a{width:100%;display:block;}
+.listamate,.listalengua,.listageo,.listaingles, .listaspanish{border-radius:4px;margin:0;padding:0;text-decoration:none;width:98%;}
+.listamate{background:#0071BD;}
+.listalengua{background:#C2262C;}
+.listageo{background:#009344;}
+.listaingles{background:#662D91;}
+.listaspanish{background:#FF6600;}
+.listamate li,.listalengua li,.listageo li,.listaingles li, .listaspanish li{border-bottom:1px solid;color:#fff;list-style:none;line-height:1.5em;overflow:hidden;padding-left:4px;width:100%;}
+.listalenguatitulo, .listaspanishtitulo{margin:0;padding:0;width:100%;}
+.listamatetitulo a,.listamate a:hover{color:#0071BD;}
+.listalenguatitulo a,.listalengua a:hover{color:#C2262C;}
+.listageotitulo a,.listageo a:hover{color:#009344;}
+.listainglestitulo,.listaingles a:hover,.ingles{color:#662D91;}
+.listaspanishtitulo a,.listaspanish a:hover,.spanish{color:#FF6600;}
+.listamate li a,.listalengua li a,.listageo li a,.listaingles li a,.listaspanish li a{display:block;text-decoration:none;color:#FFF;cursor:pointer;}
+.listamate a:hover{background-color:#81B8DF;}
+.listalengua a:hover{background-color:#DF9397;}
+.listageo a:hover{background:#CCFFCC;}
+.listaingles a:hover{background-color:#B296C7;}
+.listaspanish a:hover{background-color:#B296C7;}
+.listamatetitulo,.listalenguatitulo,.listageotitulo,.listainglestitulo,.listaspanishtitulo{margin:0;padding:0;display:block;}
+.listamatetitulo li,.listalenguatitulo li,.listageotitulo li,.listainglestitulo li,
+.listaspanishtitulo li{list-style:none;}
+.mate, .mate a, .mate a:hover{color:#3399CC;}
+.fmsn{background-color:#0071BD;}.fmsm{background-color:#A9D0F5;}
+.flsn{background-color:#C2262C;}.fgsn{background-color:#009344;}
+.fisn{background-color:#662D91;}
+.fmsn,.flsn,.fgsn,.fisn{color:white;width:100%;border-top-right-radius:4px;}
+.fjsn{width:auto;height:15px;background-color:#FBB03A;color:white;padding:0px 0px 2px 2px;}
+.mdere{border:2px solid;width:auto;text-align:left;line-height:1.3em;margin:0;padding:0;}
+.mdere a{display:block;width:100%;}
+.lengua a:hover{background:#FFE6CC;color:#CC0033;}
+a:linked{color:red}
+ul.mate,.fmate , .mstl, ul.lengua, .flengua, .lstl, ul.geo, .fgeo, .gstl, ul.ingles{margin:0;padding-left:5px;}
+.listamatetitulo, .listalenguatitulo, .listageotitulo, .listainglestitulo,
+.listaspanishtitulo,.titulo_d, .divTitulo, .fmsn, .flsn, .fgsn, .fisn, .vlink, #menu a.cabm, .#menu a.mcabgeo,
+.mnuJT, .nvTi{display:block;font-weight:bold;margin:0;padding-left:5px;height:2em;vertical-align:middle;line-height:2em;white-space:nowrap;}
+.cabm{color:#fff;background:#0071BD;}
+.mcabgeo{background:#009344;border-top-right-radius:5px;color:#fff;}
+.geo .cabm{background:#009344;border-top-left-radius:8px;border-top-right-radius:8px;}
+.mate .cabm{color:white;background:#0071BD;border-top-left-radius:8px;border-top-right-radius:8px;}
+span.gstl{vertical-align:middle;}
+.divTitulo{border-bottom:1px solid;margin:0;}
+p.divTitulo{display:block;}
+.geo a{color:#009344;}
+.lengua a{color:#CC0033;}
+.mate li,.lengua li{list-style:none;padding:0;}
+.cursorIni, .cursorIni:hover{color:#FF9900;cursor:pointer;}
+.ini a, .ini a:link{color:#FF9900;}
+.borderini{border:1px solid #FF9900;}
+.geo{color:#339933;}
+.lengua{color:#CC0033;}
+.fmate{background-color:#E4EAF4;}.flengua{background-color:#FFCCCC;}
+.fgeo{background-color:#CCFFCC;}.fingles{background-color:#FFCCFF;}
+.fspanish{background-color:#FF6600;}
+.matetabla, .lenguatabla, .inglestabla, .geotabla, .mtb{border-collapse:collapse;clear:both;width:98%;margin:0 auto;}
+.inglestabla{background:#F7D2FC;border-radius:4px;}
+.inglestabla td{border:1px solid #9F19BA;cursor:pointer;}
+.tblAbc{border-radius:4px;}
+.tblAbc td{border:1px solid #CA74DD;}
+.tblAbc th, .inglestabla th{color:#FFE5FF;background:#cb60b3;background:linear-gradient(to bottom, #cb60b3 0%,#ad1283 50%,#de47ac 100%);border:1px solid #9F19BA;text-align:center;}
+.tblAbc tr{cursor:pointer;}
+.titbl, .escTds{color:#662D91;font-weight:bold;text-align:center;}
+.escTds{font-size:.8em;background:#FFF1FF;color:blue;cursor:pointer;}
+.matetabla, .mtb{background-color:#D7E3F2;}
+.matetabla td, .matetabla th, .lenguatabla td, .lenguatabla th, .inglestabla td,
+.geotabla td, .geotabla th{padding:3px;}
+table.matetabla, table.mtb{display:table;}
+.matetabla th, .mtb th{background:#64AEDE;text-align:center;}
+.matetabla caption{color:#3399CC;font-weight:bold;}
+.dlmate dt{text-decoration:underline;color:#3399CC;}
+.geotabla{background:#D9FFD9;border:2px solid #055E05;}
+.geotabla td{border:1px solid #055E05;background:#fff;}
+.geotabla th{border:1px solid #055E05;background:#009344;color:white;text-align:center;}
+.geotabla tr:nth-child(odd) td{background:#E1FEF8;}
+.lenguatabla{background:#FFE6CC;}
+.lenguatabla th{background:#FF9999;text-align:center;border:1px solid #CC0033;font-weight:bold;}
+.lenguatabla td{border:1px solid #FF9999;}
+tr:nth-child(even){background:#f5f5f5;}
+.tr{background:#fff;}
+.col2 td:nth-child(odd){font-weight:bold;padding-left:5px;margin-left:5%;}
+#panelAciertos,#tituloPagina{margin:0 auto;text-align:center;}
+#panelAciertos{height:2em;}
+#panelMostrar{visibility:visible;display:table-row;}
+#colIzq{width:100%;display:block;}
+#divPanelIntro1{width:98%:margin:0 auto;}
+.divPubliV2{display:none !important;visibility:hidden !important;}
+#panelMostrar, #panelAciertos, #tablaTota, #tablaTotal, #colIzq{position:relative;height:auto;}
+.columna,.cabini{position:relative;}
+table#tablaAciertos{width:100%;margin:0 auto;}
+.frase{padding:5px;font-style:italic;}
+.nr{white-space:nowrap;text-align:left;}
+.bloqueInfomat,.bloqueInfolengua,.bloqueInfoing, .infomat{padding:10px;margin:0 auto;border-radius:4px;margin-bottom:10px;}
+.bloqueInfomat,.bloqueInfolengua,.bloqueInfoing,
+.bloqueInfomat{border:2px solid #3399CC;background-color:#D7E3F2;text-align:center;}
+.infomat{text-align:justify;padding:5px;background-color:#D7E3F2;border:1px solid #3399CC;}
+.ejmn{border-left:4px solid #0071BD;background:#F2F3F4;width:95%;margin:0px auto;border-left:4px solid #3399CC;padding-left:5px;text-align:center;}
+.ejmn p{font-size:18px;line-height:27px;}
+.ejm2{background:#F2F3F4;border-left:4px solid #3399CC;padding:2px;padding-left:25px;width:95%;margin:0px auto;color:rgb(0,79,131);margin-bottom:1em;}
+.ejm, .ejmc{margin-bottom:15px;color:#040000;background:#f5f5f5;padding:20px;border:1px solid #ebebeb;}
+.emc{background:#D7E3F2;border-left:4px solid #0071BD;padding:2px;padding-left:25px;width:95%;margin:0px auto;color:#000;margin-bottom:1em;text-align:center;}
+.ejm span{display:block;width:100%;}
+.mtb, .mtb td, .mtb th{border:1px solid #3399CC;text-align:center;}
+.subtm, .subtms{background:#87C7E6;font-weight:bold;color:#000;text-align:center;border-radius:2px;}
+.subtms, .subtgs{text-decoration:underline;}
+.subtg, .subtgs{color:#339933;font-weight:bold;}
+.subtl{background:#FCC3C5;font-weight:bold;color:#000;text-align:center;border-radius:2px;}
+.ejm, .ejl, .eji{
+padding:2px;padding-left:25px;width:95%;margin:0px auto;color:#000;margin-bottom:1em;cursor:pointer;
+} 
+.ejm{background:#D7E3F2;border-left:4px solid #0071BD;}
+.ejl{background:#FCE9E9;border-left:4px solid #C2262E;}
+.eji{background:#F7D2FC;border-left:4px solid #662D91;}
+.im, .imc, .ii, .iic, .il, .ilc{border:2px solid;background:#F5F5F5;margin:0 auto;margin-bottom:1em;padding:8px 12px;}
+.im, .imc{border:2px solid #0071BD;}.ii, .iic{border:2px solid #9F19BA;}.il, .ilc{border:2px solid #C2262E;}
+.infoing{width:98%;padding:5px;padding-left:15px;background-color:#F7D2FC;border-radius:3px;border:1px solid #662D91;margin:0 auto;text-align:center;background-image:url(../elabueloeduca_img/info.gif);background-repeat:no-repeat;background-position:top left;}
+.ejemi{width:80%;padding:5px;background-color:#F7D2FC;border-radius:3px;border:1px solid #662D91;margin:0 auto;text-align:center;}
+.ejemi p{width:95%;text-align:center;margin:0 auto;}
+.bloqueInfoing{border:1px solid #9F19BA;background-color:#F7D2FC;}
+.colIzq{width:100%;}
+#tablamultiplicacion{display:table;width:300px;margin:0 auto;}
+.numero,.sumar,.classFinal,.classFinalSolo,.celda,.rdoSuma{width:50px;height:50px;}
+.sumarSuma{padding:0px;}
+.sumar,.classFinal{border-color:#6699CC;border-width:2px;}
+.sumar{border-bottom:solid;text-align:center;padding:0px;}
+.classFinal{border-top:solid;background-color:#E3EDF6;}
+.classFinalSolo{background-color:#E3EDF6;padding:2px;text-align:center;}
+.rdoSuma{background-color:#E3EDF6;border-top:solid;border-color:#6699CC;padding:2px;text-align:center;}
+.error{color:red;font-weight:bold;}
+.inputText{text-align:center;border-left:none;border-right:none;border-top:none;border-bottom:1px solid #6699CC;}
+.correcto{color:green;font-weight:bold;}
+.cm{text-align:right;width:50px;}
+.classAcierto{text-transform:uppercase;text-align:right;color:green;}
+.classAci{color:green;}.classFa{color:red;}.classFallo{text-transform:uppercase;color:red;}
+.sub{text-decoration:underline;}
+.bloqueInfo{padding:10px;border:1px solid #80A93E;background-color:#F5ECB9;}
+.colDcha{border:1px solid;height:auto;width:25%;}
+.colIzq{width:70%;}
+#tablaTotal{width:100%;}
+#dvSumas{margin:0 auto;padding:0;width:100%;}
+table#tablaPreguntas{margin:0 auto;}
+#tbPreguntas{width:100%;margin:0 auto;text-align:center;}
+#finMv{display:none;margin-left:5%;width:90%;padding:2px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;-moz-box-shadow:10px 10px 20px #000;-webkit-box-shadow:10px 10px 20px #000;box-shadow:5px 5px 20px #ccc;behavior:url(ie-css3.htc);border:1px solid #80A93E;padding:1px;background:#F5ECB9;background-clip:content-box;border-radius:5px;text-transform:capitalize;}
+#finMv h6 {color:#339933;text-align:center;font-size:1.5em;}
+#finMv p{color:#333333;text-align:center;}
+.mnuJT{border-top-right-radius:3px;color:#fff;background-color:#662D91;padding-left:5px;}
+#mnuUl{padding:0 2px;margin:0;background:#FFCCFF;text-align:left;}
+.center, .c, .cc td, .col1 tr td:first-child, .imc, .iic, .ilc, .celda,.numero,.sumarSuma{text-align:center;}
+#navD{background-color:#FFCCFF;border:1px solid #662D91;}
+.nvTi{background-color:#662D91;display:block;color:#fff;}
+
+.video{background-image:url(../elabueloeduca_img/video.jpg);background-repeat:no-repeat;background-position:0% 50%;height:81px;width:98%;margin:0 auto;}
+.video a{border:1px dotted;background:#FFDA73;margin:2%;float:right;text-align:center;width:70%;}
+.unatbl,.dostbl{width:100%;display:table;margin-bottom:10px;}
+.dostbl table.inglestabla, .dostbl table.tblAbc{width:100%;}
+.tizq,.vizq{float:left;}
+.tder,.vdch{float:right;}
+.tizq,.tder{float:auto;margin:0 auto;}
+.tizq table,.tder table{width:100%;margin:0 auto;}
+table.tblAbc{border:1px solid #9F19BA;background-color:#F7D2FC;margin:0 auto;padding:0px;table-layout:fixed;text-align:center;width:98%;}
+.escTds{display:block;margin:0 auto;text-align:center;width:100%;}
+ol{padding:2px;margin:0;}
+.ejem, .ejem1{width:95%;margin:0 auto;color:#3c3c3c;background:#f5f5f5;border:1px solid #ebebeb;text-align:center;}
+.ejem.mate{border-left:2px solid #0071BD;}
+.ejem1{border-left:2px solid #C2262E;}
+.ejem1:before{display:block;content:"# Ejemplo:";color:#C2262E;font-weight:bold;font-size:.8em;}
+.ejeml{background-color:#fff;background-image:url(../elabueloeduca_img/info.png);background-repeat:no-repeat;background-position:2px 2px;border:1px solid #C2262C;border-left:14px solid #C2262C;border-radius:3px;text-align:center;color:#A62525;width:95%;margin:0 auto;}
+.correcto{color:green;font-weight:bold;}
+.tabsel{border:1px solid red;}
+.starApp, .star {
+    background-image: url(../elabueloeduca_img/star.png);
+    background-repeat: no-repeat;
+}
+.starApp {background-position: top left;text-indent: 20px;}
+.star {background-position: top right;margin-right: 5px;}
+footer{display:none;}
+@media screen and (min-width:481px) and (max-width:960px){#contenedorTotal{width:100%;}
+#contenedor{width:80%;}
+#menu{width:20%;}
+#contenido{width:75%;}
+#divPubliVGA, #divPubliV{width:18%;display:block;}
+}
+@media screen and (max-width:480px){
+#contenedorTotal, #contenedor, #contenido, .fdere{width:100%;}
+#divPubliVGA, #menu{display:none;}
+#divPubliV{bottom:50px;position:fixed;left:0px;}
+.img-responsive{max-height:50px;max-width:150px;padding-top:8px;}
+.brand{height:35px;}
+.ndivp{width:98%;}
+#ham, #ham2{position:fixed;width:48px;display:block;height:48px;z-index:10000;border:1px solid;text-align:center;bottom:0px;background-color:#fff;border-radius:2px;}
+#ham{position:fixed;left:0px;}
+#ham2{position:fixed;left:50px;}
+footer{display:block;}
+}
+@media screen and (min-width:961px){
+#contenedorTotal{width:100%;}
+#contenedor{width:80%;}
+#menu{width:20%;}
+#contenido{width:75%;}
+#divPubliVGA, #divPubliV{width:18%;display:block;}
+#cabecera{position:relative;height:auto;margin:0 auto;margin-top:10px;padding:0;}
+#barnav{padding:0;text-align:right;background-image:url(../elabueloeduca_img/lgmv.png);background-repeat:no-repeat;background-position:1% 0%;}
+.img-responsive{padding:0px;margin-top:-10px;padding-left:15px;}
+}
+/*fusionando elabueloeduca  custom*/
+
+#mate, #lengua, #geo, #ingles, #contact {color: #fff;}
+.divTitulo { border-bottom: 1px solid; margin: 0;margin-bottom: 7px;}
+.matematicas {color: #337ab7;}
+.lengua {color: #CC0033;}
+.geografia, .geo {color: #339933;}
+.ingles {color: #9F19BA;}
+/** botones lecciones y menus*/
+#mate { background: #3399CC;}
+#lengua {background: #CC0033;}
+#geo {background: #339933;}
+#ingles {background: #9F19BA;}
+#contact {background: #FF9900;}
+#games {background: #FFC773;}
+.navbar-brand {background: #fff88;}
+#lg a{color: #222222;}
+a#lg {background-repeat:no-repeat; background-position:1% 0%; background-size: 300px 50px; width: 300px; height: 50px; padding-left: 15px;}
+
+.lgbg a {display: inline-block;}
+/* sobreescribimos algunas clases */
+.pager {border: 1px solid transparent;}
+.liAcierto:after {content:"\2713\0020";color: green;}
+.liFallo:after {content:"âœ—";color: red;}
+.container, .navbar {background-color: #fff;}
+.preguntas .row {margin-bottom: 10px;}
+.txtResp.liAcierto:before {content:"\2713\0020";color: green;}
+.txtAcierto {content:"\2713\0020";color: green;}
+.glyphicon-ok {color: green;}
+.glyphicon-remove {color: red;}
+.list-group span a{color: #fff;}
+.navbar {border: 1px solid transparent;}
+/* fin elabueloeduca custom*/

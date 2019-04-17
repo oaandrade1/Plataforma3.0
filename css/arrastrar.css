@@ -1,0 +1,13 @@
+
+@media only screen and (max-width: 1300px) {
+	body {
+		background: #e2e1db;
+
+	}
+	#lienzo{
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+		border: 1px solid #d9d9d9;
+	}
+}

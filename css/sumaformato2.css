@@ -1,0 +1,361 @@
+/* para juegos */
+body{
+  font-family:'Open Sans', serif;
+  margin:0;padding:0;
+  font-size:100%;
+  line-height:1;
+}
+
+/*Panel Game*/
+#pnlGame{
+  margin:0 auto;
+  width:95%;
+  min-height:296.66px;
+  display:block;
+}
+
+/*titulo juego*/      
+#tit{
+  
+  margin:0 auto;
+  text-align:center;
+  border:1px outset red;
+  border-radius:4px;
+  width:100%;
+  /*height: 56px;
+    line-height: 56px;*/
+  color::#3399CC;
+  font-size:0.9em;
+  
+  background-color: #FFCCCC;
+  padding:2px 0px 2px 0px;
+}
+  
+  /**
+   background-color: #FFCCCC; lengua
+  **/
+  
+#preg{
+  /*font-size:2em; la vamos a hacer mas pequeÃ±a*/
+  font-size:1.2em;
+  padding:10px 0px 10px 0px;
+  /*border: 1px solid #3c3c3c;*/
+  display: block;
+}
+
+#preg,#contPreguntas{
+  text-align:center;width:100%;
+  /*height: 23px;
+  line-height: 23px;*/
+}
+footer,#contPreguntas{
+  font-size:1em;
+  margin-top:1em;
+  
+}
+  
+#pnlMarcador{
+  width:100%;
+  margin:0 auto;
+  padding:4px 0px 4px 0px;
+}
+/*lo hacemos mas pequeÃ±o de 50 a 42*/
+#preg{}
+
+#pnlMarcador{}
+
+#tablaAciertos{
+  width:100%;margin:0 auto;
+}
+#tablaAciertos td{text-align:center;width:50%;height:23px;}
+/*#tit{display:inline-block;}
+#contPreguntas{text-align:center;width:100%;}
+#preg h2{
+background-color:blue;width:100%;margin:0 auto;
+line-height:1em;
+}
+
+#pag{width:100%;margin:0 auto;}
+*/
+
+#divR{
+  /*display:block;*/
+  width:100%;
+  
+  margin:0 auto;
+  /*height:200px;
+  position: fixed;border:2px solid pink;*/
+  
+}
+
+#pnlGame ul{
+  
+  margin:0px;padding:0px;
+
+  display:inline-block	;
+
+  width:100%;
+  min-height:33%;
+  text-align:center;
+
+}
+
+#resp{
+  /* text-align:center; */
+  /* margin:0 auto; */
+  /*height:220px;*/
+  /* height:50%; */
+}
+#resp li{
+
+  display:block;
+  float:left;
+  margin:0 auto;
+  text-align:center;
+
+  /*display:inline-block;
+
+  width:100px;height:100px;
+  text-align:center;
+  */
+  /*width:50%;height:50%;*/
+  width:100%;
+  /*overflow: hidden;border:!px solid;*/
+}
+
+button {
+  width: 95%;
+  height: 95%;
+  font-size: 1em;
+  color:white;/*
+   * con 3m, no caben las respuestas de gentilicios
+   */
+  border:2px solid #CC0033;
+  padding:1px;
+  background: #CC0033;
+  background-clip: content-box;
+  border-radius:5px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+button:active{
+  background-color:white;
+  color:#000000;
+}
+
+.classAci{color:green;}.classFa{color:red;}
+
+footer{margin:0 auto;width:100%;}
+
+#respRdo{
+}
+
+a#lnkCab {
+  display: block;
+  
+  /* border: 1px solid red; */
+  width: 150px;
+  margin: 0 auto;
+  /*height: 2em;*/
+  height: 48px;
+  /* z-index: 2000; */
+  background-image:url('../img/lgmv_peq.png');
+  background-repeat:no-repeat;
+  background-position:50% 50%;
+}
+
+li.mate {
+  display: block;
+  /*height: 48px;*/
+  height: 2em;
+  border: 1px solid; 
+}
+
+li.mate a{
+  line-height: 2em;
+}
+
+#navtit {
+  background: #3399CC;  
+}
+
+#navtit {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+  line-height: 50px;
+  height: 56px;
+}
+
+#navtit li {
+  height: 2em;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+#navtit li a{
+  margin: 0 auto;
+  background: #E4EAF4;
+  color: #3399CC;
+  border-radius: 2px;
+  padding: 2px 10px 2px 10px;
+  font-size: 0.9em;
+}
+
+#endGame {
+  font-family: 'Raleway', sans-serif;
+  /*border: 1px solid;*/
+  box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  margin-bottom: 1em;
+  
+  border-top-right-radius: 3px;
+  border-top-left-radius-radius: 3px;
+
+}
+
+#endGame h3 {
+  /*background: #089de3;*/
+  /*padding-left: 10px;*/
+  text-align: center;
+  background: #EB9C00;
+  width: 100%;
+  color: #fff;
+  height: 2em;
+  line-height: 2em;
+
+  border-top-right-radius: 3px;
+  border-top-left-radius-radius: 3px;
+}
+#endGame ul {
+
+  margin: 0; padding: 0;
+  text-align: left;
+  
+}
+#endGame li {
+  list-style: lower-roman;
+  line-height: 1em; 
+  width: 70%;
+  margin: 0 auto;
+}
+
+li.err, span.err {
+  color:red;
+  text-decoration: line-through;
+}
+
+#endGame span {
+  font-weight: bold;
+}
+
+span.ok{
+  color:green;
+  font-weight: bold;
+}
+
+.endGameF {
+  margin-top: 1em;
+  background: #FFC85B;
+
+  z-index: 3000;
+  display: block;
+  /*border: 1px solid;*/
+  display: flex;
+
+  height: 2em;
+  line-height: 2em;
+}
+.endGameF a {
+  /*width: 33%; si son 3*/
+  width: 100%;
+  color: #000;
+  text-align: center;
+}
+
+.endGameF a.i {
+  padding-left: 5px;
+  text-align: left;
+}
+.endGameF a.d {
+  padding-right: 5px;
+  text-align: right;
+}
+
+/* en los 2 css parte cabecera */
+#cabecera{
+  margin: 0 auto;padding: 0;
+  display: flex;
+  height:56px;
+  background-color:transparent;
+/*  background-image:url('../img/lgmv_peq.png');
+  background-repeat:no-repeat;
+*/  background-position:50% 50%;
+  /*border: 1*/px solid blue;
+  width: 98%;
+}
+
+#aI, #lnkD {
+  position: absolute;
+  /*width: 150px;*/ /*quedaban muy grandes, los ponemos auto*/
+  width: auto;
+  /*border: 1px solid;*/
+  height: 48px;
+  line-height: 48px !important;
+  /*background: yellow;*/
+}
+
+#aI {
+  left: 3%;
+}
+
+#lnkD {
+  right: 3%;
+  text-align: right;
+}
+
+#cabecera.lengua a{
+  /* background: transparent; */
+  color: #CC0033;
+}
+#cabecera.geografia a{
+  color: #339933;
+}
+#cabecera.ingles a{
+  color: #662D91;
+}
+/*botones, quitar de los headers*/
+#resp {
+    text-align: center;
+    margin: 0 auto;
+    height: 220px;
+}
+#resp li {
+    display: block;
+    float: left;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    /* overflow: hidden; */
+    /*border: !px solid;*/
+}
+
+.snd {
+  background-image:url('../../elabueloeduca_img/sound_on.png');
+  background-repeat:no-repeat;
+  background-position:50% 50%;
+  cursor: pointer;
+}
+
+#frase {
+  padding: 2px;
+  font-size:0.95em;
+}
+#frase b{
+  padding: 2px;
+  background: orange; !important;
+ }
