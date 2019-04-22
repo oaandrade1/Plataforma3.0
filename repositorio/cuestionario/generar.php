@@ -25,22 +25,22 @@
 		//echo "consulta: ".$query;
 		while ($t<= $numpreguntas) {
 			$n = 1;
-			echo "<br>";
+			//echo "<br>";
 			while ($n<=$numopciones) {
-				echo "<br>";
+				//echo "<br>";
 				$dato = $_POST[$t.'#'.$n];
 				if($dato==1){
 
 		$query="INSERT INTO test_resolucion_curso (idusuario, numpregunta, numopcion) VALUES ($id, $t, $n)";
 		mysqli_query($mysql,$query);
 
-					echo $dato;
+					//echo $dato;
 					break;
 				}
-				echo "<br>";
+				//echo "<br>";
 				$n++;
 			}
-			echo "<br>";
+			//echo "<br>";
 			$t++;
 		}
 		if ($result) {
@@ -52,7 +52,6 @@
 			";
 		}else{
 			?>
-
 			<script type="text/javascript">
 				alert("ERROR AL ENVIAR EL CUESTIONARIO");
 			</script>

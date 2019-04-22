@@ -15,11 +15,11 @@
   <div class="container">
     <div class="grupo-form">
       <label for="nombre">Nombre:</label>
-      <input name="nombre" id="nombre" placeholder="Nombre" maxlength="50" required>
+      <input name="nombre" id="nombre" placeholder="Nombre" maxlength="50" required="">
     </div>      
     <div class="grupo-form">
       <label for="apellido">Apellido:</label>
-      <input name="apellido" id="apellido" placeholder="Apellido" maxlength="50" required>
+      <input name="apellido" id="apellido" placeholder="Apellido" maxlength="50" required="">
     </div>
   </div>
 
@@ -150,6 +150,18 @@
       var ap = document.getElementById('apellido').value;
       document.getElementById('nombreusr').value=n;
       document.getElementById('apellidousr').value=ap;
+      var d = <?php echo $_GET['test']; ?>;
+      console.log("D: "+d);
+      console.log("D: "+n.length);
+      console.log("D: "+ap.length);
+      if(n.length>=3&&ap.length>=3){        
+        //windows.location.href = "visualizar.php?test="+d;
+        return true;
+      }else{
+        alert("Nombre y Apellido de 3 caracteres mínimo.");
+        return false;
+      }
+      return false;
     }
   </script>
 
@@ -159,7 +171,7 @@
 
   <!-- ******************** RESPUESTAS DE LA PERSONA ******************** -->
 
-  <form action="generar.php" method="POST">
+  <form action="generar.php" method="POST" onsubmit="return datos()">
     <?php
       $t = 1;
       while ($t<=$npregunta) {
@@ -187,7 +199,7 @@
     <input type="hidden" name="apellidousr" id="apellidousr" value="">
     <input type="hidden" name="numpreguntas" value="<?php echo ($t-1); ?>">
     <input type="hidden" name="numopciones" value="<?php echo ($n-1); ?>">
-    <input type="submit" name="guardar" value="GUARDAR" onclick="datos()" class="boton">
+    <input type="submit" name="guardar" value="GUARDAR" class="boton">
   </form>
 
   <!-- ****************************************************************** -->
