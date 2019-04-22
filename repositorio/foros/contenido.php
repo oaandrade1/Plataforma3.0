@@ -4,6 +4,8 @@
 	<title>Contenido</title>
 	<link rel="stylesheet" type="text/css" href="../css/contenido.css">
 	<link rel="stylesheet" type="text/css" href="../css/foro_publicacion.css">
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+
 </head>
 <body>
 
@@ -45,7 +47,9 @@
 		include_once '../comentario/comentarios.php';
 	?>
 
-	<form method="POST" action="#">
+	<form method="POST" onsubmit="return submitUserForm();" action="#">
+		 <center><div class="g-recaptcha" data-sitekey="6LfBbp8UAAAAANjaQGKd_PJtlxTYyTx44SXMZO-X" data-callback="verifyCaptcha"></div>
+    <div id="g-recaptcha-error"></div></center>
 		<div ng-app="comments" ng-controller="commentsCtrl">
 			<ul class="ul_comentario">
 			<li ng-repeat="comment in comments" class="comentario_contenedor">
@@ -78,5 +82,19 @@
 	    }
 	</script>
 
+	<script>
+function submitUserForm() {
+    var response = grecaptcha.getResponse();
+    if(response.length == 0) {
+        document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
+        return false;
+    }
+    return true;
+}
+ 
+function verifyCaptcha() {
+    document.getElementById('g-recaptcha-error').innerHTML = '';
+}
+</script>
 </body>
 </html>

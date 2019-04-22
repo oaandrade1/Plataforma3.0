@@ -1,5 +1,5 @@
-<html lang="en">
-<head>
+<!DOCTYPE html>
+<html lang="es">
   <meta charset="utf-8">
   <title>Inicio Sesion</title>
  	<link rel="shortcut icon" href="imagenes/iconoweb.ico" />
@@ -12,8 +12,8 @@
   <div class="form">
     <form action="admin/verificar.php" method="post">
       <h1>Inicio de sesión</h1>
-      <label>Correo electronico<input type="email" class="user"  name="usuario" placeholder="Correo electronico" /></label>
-      <label>Contraseña<input type="password" class="pass" name="codigo" placeholder="Contraseña" /></label>
+      <label for="usuario">Correo electronico<input type="email" class="user" id="usuario" title="usuario" name="usuario" placeholder="Correo electronico"></label>
+      <label for="codigo">Contraseña<input type="password" id="codigo" class="pass" name="codigo" title="contraseña" placeholder="Contraseña"></label>
 
       <input  type="submit" class="login" value="Iniciar sesión">
     </form>

@@ -3,6 +3,7 @@
 	<meta charset="utf-8">
 	<title>Contenido</title>
 	<link rel="stylesheet" type="text/css" href="../../css/contenido.css">
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 
@@ -65,6 +66,11 @@
 					<input type="hidden" name="idcurso" value="<?php echo $idfocus;?>">
 					<input type="hidden" name="idautor" value="<?php echo $idautor;?>">
 				</form>
+				<form class="menu_form" action="recursos.php?rpa=8" target="_blank" method="POST">
+					<input class="submenu" type="submit" name="seccion" value="Test">
+					<input type="hidden" name="idcurso" value="<?php echo $idfocus;?>">
+					<input type="hidden" name="idautor" value="<?php echo $idautor;?>">
+				</form>
 		
 				</center>
 			</li>
@@ -89,7 +95,9 @@
 		include_once '../../comentario/comentarios.php';
 	?>
 
-	<form method="POST" action="#">
+	<form method="POST" onsubmit="return submitUserForm();" action="#">
+		 <center><div class="g-recaptcha" data-sitekey="6LfBbp8UAAAAANjaQGKd_PJtlxTYyTx44SXMZO-X" data-callback="verifyCaptcha"></div>
+    <div id="g-recaptcha-error"></div></center>
 		<div ng-app="comments" ng-controller="commentsCtrl">
 			<ul class="ul_comentario">
 			<li ng-repeat="comment in comments" class="comentario_contenedor">
@@ -114,6 +122,21 @@
 	        window.history.replaceState( null, null, window.location.href );
 	    }
 	</script>
+
+	<script>
+function submitUserForm() {
+    var response = grecaptcha.getResponse();
+    if(response.length == 0) {
+        document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
+        return false;
+    }
+    return true;
+}
+ 
+function verifyCaptcha() {
+    document.getElementById('g-recaptcha-error').innerHTML = '';
+}
+</script>
 
 </body>
 </html>

@@ -21,6 +21,24 @@
 </head>
 <body>
 
+  <?php
+    include_once '../../conexion/conectar.php';
+    $idusuario = $_SESSION['identidadUSR'];
+    $sql = "SELECT c.idcurso,c.titulo,c.descripcion,ca.idarea from cursos as c INNER JOIN curso_area ca ON c.idcurso=ca.idcurso AND c.idautor=".$idusuario." AND ca.idarea=".$idarea;
+    
+    $idareac = mysqli_query($mysql,$sql)->fetch_array()[3];
+    $sqlarea = "SELECT area FROM areaconocimiento WHERE idarea=".$idarea;
+    $areacurso = mysqli_query($mysql,$sqlarea)->fetch_array()[0];
+
+    $r = mysqli_query($mysql,$sql);
+
+  ?>
+
+  <center>
+    <h1><?php echo $areacurso; ?></h1>
+  </center>
+
+
   <section>
       <form class="buscador" method="post">
         <input type="text" class="cajatexto" placeholder="Buscar curso">
@@ -31,10 +49,6 @@
   <section>
     <ul class="cards">
     <?php
-    include_once '../../conexion/conectar.php';
-    $idusuario = $_SESSION['identidadUSR'];
-    $sql = "SELECT c.idcurso,c.titulo,c.descripcion from cursos as c INNER JOIN curso_area ca ON c.idcurso=ca.idcurso AND c.idautor=".$idusuario." AND ca.idarea=".$idarea;
-    $r = mysqli_query($mysql,$sql);
     while($fila=$r->fetch_array()){
       echo "
         <form method='POST' action='modificar.php?id=".$fila[0]."' target='_blank'>          

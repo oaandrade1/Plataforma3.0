@@ -40,26 +40,53 @@
 
 				switch ($rpa) {
 					case 1:
-					$sql = "SELECT titulo,idautor,archivo,tipo FROM archivos WHERE idautor=".$_POST['idautor']." AND idcurso=".$_POST['idcurso']." AND tipo LIKE '%image/%'";
+					$sql = "SELECT titulo,idautor,archivo,tipo,textoalt FROM archivos WHERE idautor=".$_POST['idautor']." AND idcurso=".$_POST['idcurso']." AND tipo LIKE '%image/%'";
 						break;
 					case 2:	
 					$sql = "SELECT titulo,idautor,archivo,tipo FROM archivos WHERE idautor=".$_POST['idautor']." AND idcurso=".$_POST['idcurso']." AND tipo NOT LIKE '%image/%' AND tipo NOT LIKE '%video/%' AND tipo NOT LIKE '%audio/%'";
 						break;
 					case 3:
-					$sql = "";
+					$sql = "SELECT titulo,idautor,archivo,tipo,ruta FROM archivos WHERE idautor=".$_POST['idautor']." AND idcurso=".$_POST['idcurso']." AND tipo LIKE '%video/%'";
 						break;
 					case 4:
-					$sql = "";
+					$sql = "SELECT titulo,idautor,archivo,tipo,ruta FROM archivos WHERE idautor=".$_POST['idautor']." AND idcurso=".$_POST['idcurso']." AND tipo LIKE '%audio/%'";
 						break;
 					case 5:
 					$sql = "";
-					
+					echo "<tr>
+						    <td>JUEGO</td>
+						    <td>
+						    </td>            
+						    <td>
+						     <strong>
+						      <u>
+				 				<a href='../../../juegos/juego.html.'>Juego suma</a>
+						      </u>
+						      </strong>
+						    </td>
+						  </tr> 
+						  <tr>
+						    <td>JUEGO</td>
+						    <td>
+						    </td>            
+						    <td>
+						     <strong>
+						      <u>
+				 				<a href='../../../juegos/juego5.html.'>Juego Arrastrar</a>
+						      </u>
+						      </strong>
+						    </td>
+						  </tr>
+				  	";					
 						break;
 					case 6:
 					header("Location: ../../foros/visualizar.php?idcurso=".$_POST['idcurso']."&curso=".$_POST['nombre_curso']);
 						break;
 					case 7:
 					header("Location: ../../foros/crear.php?idcurso=".$_POST['idcurso']);
+						break;
+					case 8:
+					header("Location: ../../cuestionario/test.php?idcurso=".$_POST['idcurso']);
 						break;
 				}
 				
@@ -84,7 +111,7 @@
 						
 					    if($extension[0]=="image"){
 					    	$recurso = "
-						    <img id='im".$n."' src='data:".$fila[3].";base64,".$base64."' width='120px' height='100px' alt='No existe vista previa.'>
+						    <img id='im".$n."' src='data:".$fila[3].";base64,".$base64."' width='120px' height='100px' alt='".$fila['textoalt']."'>
 						    ";
 					    }else{
 					    	$recurso = strtoupper($extension[1]);
@@ -96,7 +123,16 @@
 						    <td>
 						      <strong>
 						      <u>
-						      	<a href='data:".$fila[3].";base64,".$base64."' download='".$dato."'>Descargar</a>
+				      	";
+				      		
+				      		if($extension[0]=="video"||$extension[0]=="audio"){
+						      	$multimedia = "<a href='../../../".$fila[4]."' download='".$dato."'>Descargar</a>";
+				      		}else{
+				      			$multimedia = "<a href='data:".$fila[3].";base64,".$base64."' download='".$dato."'>Descargar</a>";
+				      		}
+
+				      	echo "
+			      			".$multimedia."
 						      </u>
 						      </strong>
 						    </td>

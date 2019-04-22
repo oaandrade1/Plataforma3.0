@@ -1,0 +1,126 @@
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #f6f6f6;
+}
+.test {
+  padding: 0 30px 20px 30px;
+  max-width: 960px;
+  margin: 0 auto;  
+}
+li{
+  border: 1px solid #d2d2d2
+}
+.test ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+}
+.test-question {
+  font-weight: bold;
+  display: block;
+  padding: 30px 0 10px 0;
+  margin: 0;
+}
+.test-answer {
+  margin: 0;
+  padding: 10px;
+  background: #f7f7f7;
+  margin-bottom: 5px;
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed vers*/
+}
+.test-answer:hover {
+  background: #eee;
+}
+.test-answer:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ccc;
+  background: #fff;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.test-answer.active:before {
+ background-color: #2138de;
+  border-color: #0e1780;
+}
+.test-answer.correct:before {
+  background-color: green;
+  border-color: green;
+}
+.test-answer.incorrect:before {
+  background-color: red;
+  border-color: red;
+}
+.test-answer.active.correct:before {
+  outline: 2px solid green;
+  outline-offset: 2px;
+}
+.test-result {
+  max-width: 960px;
+  margin: 0 auto;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+.test-result.good {
+  background: green;
+}
+.test-result.mid {
+  background: orange;
+}
+.test-result.bad {
+  background: red;
+}
+.boton{
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+    }
+
+.boton:hover{
+    background: #f8f8f8;
+}
+
+.grupo-form{
+  padding: 5px 0;
+}
+
+.grupo-form label{
+  display:block;
+  padding:8px 0px;
+}
+
+.grupo-form input, select{
+  background: #fff;
+  display:block;
+  border:none;
+  border-radius:5px;
+  width:100%;
+  font-size:16px;
+  font-family: 'Montserrat', sans-serif;
+  padding:10px 0px 10px 8px;
+  height: 55px;
+}
+
+.grupo-form label{
+  font-size:17px;
+  display:block;
+  padding:8px 0px;
+}

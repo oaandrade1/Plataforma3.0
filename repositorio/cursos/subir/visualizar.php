@@ -19,7 +19,22 @@
   <link rel="stylesheet" type="text/css" href="../../css/buscador.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 </head>
-<body>
+<body>  
+
+  <?php
+    include_once '../../conexion/conectar.php';
+    $idusuario = $_SESSION['identidadUSR'];
+    $sql = "SELECT c.idcurso,c.titulo,c.descripcion,ca.idarea from cursos as c INNER JOIN curso_area ca ON c.idcurso=ca.idcurso AND c.idautor=".$idusuario." AND ca.idarea=".$idarea;
+    $idareac = mysqli_query($mysql,$sql)->fetch_array()[3];
+    $sqlarea = "SELECT area FROM areaconocimiento WHERE idarea=".$idarea;
+    $areacurso = mysqli_query($mysql,$sqlarea)->fetch_array()[0];
+
+    $r = mysqli_query($mysql,$sql);
+  ?>
+
+  <center>
+    <h1><?php echo $areacurso; ?></h1>
+  </center>
 
   <section>
       <form class="buscador" method="post">
@@ -29,16 +44,13 @@
   </section>
 
   <section>
-    <ul class="cards">
+    <ul class="cards">   
     <?php
-    include_once '../../conexion/conectar.php';
-    $idusuario = $_SESSION['identidadUSR'];
-    $sql = "SELECT c.idcurso,c.titulo,c.descripcion from cursos as c INNER JOIN curso_area ca ON c.idcurso=ca.idcurso AND c.idautor=".$idusuario." AND ca.idarea=".$idarea;
-    $r = mysqli_query($mysql,$sql);
     while($fila=$r->fetch_array()){
       echo "
-        <form method='POST' action='../../../agregarREA.php?area=".$idarea."' target='_blank'>          
+        <form method='POST' action='../../../agregarREA.php' target='_blank'>          
           <input type='hidden' name='idcurso' value='".$fila[0]."'>
+          <input type='hidden' name='area' value='".$_GET['area']."'>
           <li class='cards__item'>
             <div class='card'>
               <div class='card__image card__image--fence'></div>

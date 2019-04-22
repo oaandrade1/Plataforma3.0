@@ -43,10 +43,11 @@
 						</div>
 					</div>
 					<div class='hbf-lower-content'>
-						<div class='hbf-title'>Crear Curso</div>
+						<div class='hbf-title'>Crear Contenido</div>
 						<div class='hbf-text'>Elaborar temas de aprendizaje.</div>
 					</div>
-					<div class='hbf-more'><a href='cursos/publicar/crear.php?<?php echo $area;?>' target="_blank">CREAR</a></div>
+					<div class='hbf-more' style="bottom: 95px;"><a href='cursos/publicar/crear.php?<?php echo $area;?>' target="_blank">CREAR CURSO</a></div><br>
+					<div class='hbf-more'><a href='cursos/publicar/cuestionario.php?<?php echo $area;?>' target="_blank">CREAR TEST</a></div>
 				</div>	
 
 				<div class='home-box-fifth hbf-5'>

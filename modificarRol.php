@@ -3,7 +3,6 @@
 
 <?php
 include_once 'conexion.php';
-$nombre=$_POST['nombre'];
 	//CAPTURAR NOMBRE DE USUARIOS 
 	$sql = "SELECT nombre, apellido FROM usuarios";
 	$result = mysqli_query($conectar,$sql);
@@ -19,7 +18,7 @@ $nombre=$_POST['nombre'];
 <!-- BUSCAR REGISTRO -->
 <div class="wrapper">
 <div align="center" class="login">
-<form action="#" method="post" autocomplete="off">
+<form action="modificarRol.php" method="post" autocomplete="off">
   <div class='login-container'>
 NOMBRE DE USUARIO <input type="text" name="nombre" list="lista" required>
 <input type="submit" name="buscar" value="Buscar" class="boton">
@@ -75,25 +74,38 @@ echo "<div align='center'>No se encuentran registros</div><br>";
 //ACTUALIZAR DATOS
 if(isset($_REQUEST['Modificar'])){
 $rol=$_REQUEST['rol'];
+$nombre=$_REQUEST['nombre'];
+$apellido=$_REQUEST['apellido'];
 
 //consulta sql
 $queryi="UPDATE usuarios SET 
-rol='$rol',
-WHERE CONCAT(`Nombre`, ' ',`Apellido`) = '$nombre $apellido'";
-echo "consulta: ".$queryi;
+idrol='$rol' WHERE CONCAT(`Nombre`, ' ',`Apellido`) = '$nombre $apellido'";
+//echo "consulta: ".$queryi;
 $val=mysqli_query($conectar,$queryi);//ejecutando consulta
 
 if(!$val){
-echo "No se ha podido Modificar";
+?>
+
+			<script type="text/javascript">
+				alert("ERROR AL MODIFICAR");
+			</script>
+			<?php
 }
 else {
-echo "Datos Modificados Correctamente<br><br>";
+?>
+
+			<script type="text/javascript">
+				alert("DATOS ACTUALIZADOS");
+			</script>
+			<?php
 }
 }
 ?>
 </div>
 
 
-<script type="text/javascript">
-document.oncontextmenu = function(){return false;}
-</script>		
+<script>
+    	if ( window.history.replaceState ) {
+	        window.history.replaceState( null, null, window.location.href );
+	    }
+	</script>
