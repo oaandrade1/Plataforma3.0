@@ -461,7 +461,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 802px){
+@media (max-width: 882px){
   .menu_contenedor{
     height: 94px;
   }
